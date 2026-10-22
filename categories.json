@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "id": "full-run", "label": "Full runs" },
+    { "id": "speedrun", "label": "Speedrun" },
+    { "id": "fresh-file", "label": "Fresh File" },
+    { "id": "practice", "label": "Practice" }
+  ]
+}

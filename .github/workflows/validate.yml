@@ -1,0 +1,79 @@
+name: Validate catalog
+
+# Checks every entry folder with the catalog builder and feed decoder of the planner's latest
+# release: strict entry.json fields, a declared category and a plan that loads.
+# No secrets.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  # The planner repository whose releases load and check the entries.
+  PLANNER_REPOSITORY: maybe-adamant/RunPlanner
+
+jobs:
+  validate:
+    name: Validate entry folders
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out the catalog
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          path: catalog-repo
+          persist-credentials: false
+
+      - name: Find the planner's latest release
+        id: planner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(gh api "repos/${PLANNER_REPOSITORY}/releases/latest" --jq .tag_name)"
+          echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
+
+      - name: Check out the planner release
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: ${{ env.PLANNER_REPOSITORY }}
+          ref: ${{ steps.planner.outputs.tag }}
+          path: planner
+          persist-credentials: false
+
+      - name: Require the planner's catalog builder
+        env:
+          PLANNER_TAG: ${{ steps.planner.outputs.tag }}
+        run: |
+          if [ ! -f planner/scripts/catalog-build.mjs ]; then
+            echo "Planner ${PLANNER_TAG} predates the catalog; release a planner with it first." >&2
+            exit 1
+          fi
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: planner/.nvmrc
+          cache: npm
+          cache-dependency-path: planner/package-lock.json
+
+      - name: Install planner dependencies
+        working-directory: planner
+        run: npm ci --ignore-scripts
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable 2026-08-03
+
+      # Builds the feed exactly as publishing would, then checks it with the planner's own decoder.
+      - name: Validate every entry folder
+        run: |
+          (cd planner && npm run catalog:build -- --entries ../catalog-repo/entries \
+            --categories ../catalog-repo/categories.json --out ../check)
+          (cd planner && cargo run --quiet --release --locked \
+            --manifest-path apps/planner/src-tauri/Cargo.toml \
+            -p run-planner-game-host --example catalog_ci -- check ../check/catalog.json)
+          cat check/summary.txt >> "${GITHUB_STEP_SUMMARY}"
+          cat check/summary.txt

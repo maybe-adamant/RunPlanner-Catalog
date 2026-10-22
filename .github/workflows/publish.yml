@@ -1,0 +1,217 @@
+name: Publish catalog
+run-name: Publish catalog${{ inputs.dry_run && ' (dry run)' || '' }}
+
+# Builds the catalog index of every entry with the planner's latest release, which also loads
+# each plan to refuse one the planner cannot open, signs the index with the catalog key and
+# replaces the assets of this repository's `catalog` release. Each planner downloads an entry's
+# plan only when a player adds it to their library.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build and check the index and print its summary; sign and upload nothing"
+        required: false
+        default: true
+        type: boolean
+  push:
+    branches: [main]
+    paths: ["entries/**", "categories.json"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  # The planner repository whose releases load and check the entries.
+  PLANNER_REPOSITORY: maybe-adamant/RunPlanner
+
+jobs:
+  build:
+    name: Build the catalog index
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      planner_tag: ${{ steps.planner.outputs.tag }}
+
+    steps:
+      - name: Check out the catalog
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          path: catalog-repo
+          persist-credentials: false
+
+      - name: Find the planner's latest release
+        id: planner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(gh api "repos/${PLANNER_REPOSITORY}/releases/latest" --jq .tag_name)"
+          echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
+
+      - name: Check out the planner release
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: ${{ env.PLANNER_REPOSITORY }}
+          ref: ${{ steps.planner.outputs.tag }}
+          path: planner
+          persist-credentials: false
+
+      - name: Require the planner's catalog builder and key
+        run: |
+          if [ ! -f planner/scripts/catalog-build.mjs ]; then
+            echo 'The planner release predates the catalog.' >&2
+            exit 1
+          fi
+          if grep -q '^PLACEHOLDER' planner/apps/planner/src-tauri/catalog-feed.pub; then
+            echo 'The planner release ships the placeholder catalog key; install the real key first.' >&2
+            exit 1
+          fi
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: planner/.nvmrc
+          cache: npm
+          cache-dependency-path: planner/package-lock.json
+
+      - name: Install planner dependencies
+        working-directory: planner
+        run: npm ci --ignore-scripts
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable 2026-08-03
+
+      - name: Build and check the index
+        run: |
+          (cd planner && npm run catalog:build -- --entries ../catalog-repo/entries \
+            --categories ../catalog-repo/categories.json --out ../out)
+          # The planner's own decoder must accept every listed entry.
+          (cd planner && cargo run --quiet --release --locked \
+            --manifest-path apps/planner/src-tauri/Cargo.toml \
+            -p run-planner-game-host --example catalog_ci -- check ../out/catalog.json)
+
+      # The index carries each plan's hash, so a published index with the same bytes and a valid
+      # signature means nothing changed; republishing would only move the signature timestamp.
+      # A missing, different or unverifiable published index is republished.
+      - name: Compare with the published index
+        id: compare
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+          PLANNER_TAG: ${{ steps.planner.outputs.tag }}
+        run: |
+          changed=true
+          mkdir -p published
+          if gh release download catalog -p catalog.json -p catalog.json.sig -D published 2>/dev/null \
+            && cmp -s out/catalog.json published/catalog.json \
+            && (cd planner && cargo run --quiet --release --locked \
+              --manifest-path apps/planner/src-tauri/Cargo.toml \
+              -p run-planner-game-host --example catalog_ci -- \
+              verify ../published/catalog.json ../published/catalog.json.sig \
+              "$(cat apps/planner/src-tauri/catalog-feed.pub)"); then
+            changed=false
+          fi
+          echo "changed=${changed}" >> "${GITHUB_OUTPUT}"
+          {
+            echo "Planner ${PLANNER_TAG}; index changed: ${changed}"
+            echo
+            cat out/summary.txt
+          } | tee -a "${GITHUB_STEP_SUMMARY}"
+
+      - name: Keep the unsigned index for publishing
+        if: ${{ steps.compare.outputs.changed == 'true' && !inputs.dry_run }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: catalog-feed
+          path: out/
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: Sign and publish the catalog index
+    needs: build
+    if: ${{ needs.build.outputs.changed == 'true' && !inputs.dry_run }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Owner-gated: the environment allows only main and holds the signing key.
+    environment: catalog-publish
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out the planner release
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: ${{ env.PLANNER_REPOSITORY }}
+          ref: ${{ needs.build.outputs.planner_tag }}
+          path: planner
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: planner/.nvmrc
+          cache: npm
+          cache-dependency-path: planner/package-lock.json
+
+      - name: Install planner dependencies
+        working-directory: planner
+        run: npm ci --ignore-scripts
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4 # stable 2026-08-03
+
+      - name: Download the unsigned index
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7
+        with:
+          name: catalog-feed
+          path: out
+
+      # The catalog key reaches this step alone. Each signature carries a fresh timestamp, which
+      # planners use to refuse an older index replayed over a newer one.
+      - name: Sign the index
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.CATALOG_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.CATALOG_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: |
+          if [ -z "${TAURI_SIGNING_PRIVATE_KEY}" ]; then
+            echo 'The CATALOG_SIGNING_PRIVATE_KEY secret must hold the catalog signing key.' >&2
+            exit 1
+          fi
+          node planner/node_modules/@tauri-apps/cli/tauri.js signer sign out/catalog.json
+          if [ ! -f out/catalog.json.sig ]; then
+            echo 'The catalog index signature was not produced.' >&2
+            exit 1
+          fi
+
+      # The planner release's key must accept the signature, so a wrong key never publishes.
+      - name: Verify the signature
+        run: |
+          (cd planner && cargo run --quiet --release --locked \
+            --manifest-path apps/planner/src-tauri/Cargo.toml \
+            -p run-planner-game-host --example catalog_ci -- \
+            verify ../out/catalog.json ../out/catalog.json.sig \
+            "$(cat apps/planner/src-tauri/catalog-feed.pub)")
+
+      - name: Upload to the catalog release
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! gh release view catalog >/dev/null 2>&1; then
+            gh release create catalog --prerelease --latest=false \
+              --title 'Plan catalog' \
+              --notes 'The signed Run Planner plan catalog, replaced in place by the publish workflow.'
+          fi
+          gh release edit catalog --prerelease --latest=false
+          mapfile -t plans < <(find out -maxdepth 1 -type f -name '*.runplanner.json' | sort)
+          # Plans first, so the index never names a file that is not there yet; then the index and
+          # its signature together.
+          if [ "${#plans[@]}" -gt 0 ]; then
+            gh release upload catalog "${plans[@]}" --clobber
+          fi
+          gh release upload catalog out/catalog.json out/catalog.json.sig --clobber
