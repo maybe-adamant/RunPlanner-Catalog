@@ -1,0 +1,4788 @@
+{
+  "schemaVersion": 96,
+  "projectId": "run-plan-91603b12-4af3-482c-815d-193d0788e2a6",
+  "catalogVersion": "0.55.0-anvil-of-fates",
+  "route": {
+    "routeKey": "Underworld",
+    "itineraryBiomeKeys": [
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "resourcePlacements": {
+      "Pickaxe": null,
+      "Exorcism": {
+        "biomeKey": "H",
+        "occurrenceId": "fe278941-5986-4de9-9e75-b281be0cc589"
+      },
+      "Shovel": {
+        "biomeKey": "H",
+        "occurrenceId": "fe278941-5986-4de9-9e75-b281be0cc589"
+      },
+      "Fishing": null
+    },
+    "loadout": {
+      "weaponKey": "WeaponLob",
+      "aspectKey": "LobImpulseAspect",
+      "startingReward": {
+        "rewardType": "WeaponUpgrade"
+      },
+      "manualArcanaKeys": [
+        "ChanneledCast",
+        "HealthRegen",
+        "LowManaDamageBonus",
+        "CastBuff",
+        "BonusHealth",
+        "BonusDodge",
+        "SprintShield",
+        "StatusVulnerability",
+        "ChanneledBlock",
+        "StartingGold",
+        "MetaToRunUpgrade",
+        "LowHealthBonus"
+      ],
+      "fearRanks": {
+        "HealingReductionShrineUpgrade": 0,
+        "ShopPricesShrineUpgrade": 0,
+        "EnemyHealthShrineUpgrade": 0,
+        "EnemyDamageShrineUpgrade": 0,
+        "EnemySpeedShrineUpgrade": 2,
+        "EnemyShieldShrineUpgrade": 0,
+        "EnemyCountShrineUpgrade": 0,
+        "EnemyRespawnShrineUpgrade": 0,
+        "NextBiomeEnemyShrineUpgrade": 0,
+        "BiomeSpeedShrineUpgrade": 0,
+        "MinibossCountShrineUpgrade": 1,
+        "BossDifficultyShrineUpgrade": 0,
+        "BoonSkipShrineUpgrade": 0,
+        "BoonManaReserveShrineUpgrade": 0,
+        "BanUnpickedBoonsShrineUpgrade": 0,
+        "LimitGraspShrineUpgrade": 0,
+        "EnemyEliteShrineUpgrade": 0
+      },
+      "startingKeepsakeKey": "TempHammerKeepsake",
+      "familiarKey": "FrogFamiliar",
+      "keepsakeEquipResults": {
+        "experimentalHammer": {
+          "kind": "selected",
+          "traitKey": "LobSpreadShotTrait"
+        }
+      }
+    },
+    "biomes": [
+      {
+        "biomeKey": "F",
+        "state": {},
+        "topology": {
+          "startOccurrenceId": "79df3c98-12ab-4d1c-8e0d-36d36e2260d8",
+          "occurrences": [
+            {
+              "occurrenceId": "79df3c98-12ab-4d1c-8e0d-36d36e2260d8",
+              "gameName": "F_Opening01",
+              "state": {
+                "kind": "none"
+              },
+              "startingRewardAcquisition": {
+                "traitOffersByAcquisitionRole": {
+                  "self": {
+                    "kind": "traits",
+                    "giverKey": "WeaponUpgrade",
+                    "options": [
+                      {
+                        "traitKey": "LobPulseAmmoCollectTrait"
+                      },
+                      {
+                        "traitKey": "LobAmmoMagnetismTrait"
+                      },
+                      {
+                        "traitKey": "LobRushArmorTrait"
+                      }
+                    ],
+                    "selectedOptionKey": "option1",
+                    "rarificationActions": []
+                  }
+                },
+                "dispositionByAcquisitionRole": {
+                  "self": {
+                    "kind": "normal"
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "Brawler",
+                            "SiegeVine"
+                          ],
+                          "allocations": {
+                            "Brawler": 17.5
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": [
+                {
+                  "kind": "chaos",
+                  "key": "chaos",
+                  "occurrenceId": "f2b3a96e-2dc2-4cf4-9499-8b7e722e257c"
+                }
+              ]
+            },
+            {
+              "occurrenceId": "f2b3a96e-2dc2-4cf4-9499-8b7e722e257c",
+              "gameName": "Chaos_02",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "TrialUpgrade"
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "self": {
+                      "kind": "chaos",
+                      "giverKey": "Chaos",
+                      "curseOptions": [
+                        {
+                          "curseKey": "ChaosTimeCurse",
+                          "requirementCount": 2
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "selectedCurseValues": {},
+                      "blessingKey": "ChaosSpeedBlessing",
+                      "rarity": "Epic",
+                      "blessingValues": {}
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "96d78ad5-5d09-4f53-a79a-cacfb0238f43",
+              "gameName": "F_Combat02",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCurrencyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "9ad9c2cc-30a6-48c7-ac8b-47c6eadc7666",
+              "gameName": "F_Combat03",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "GiftDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "levelResolutionsByAcquisitionRole": {
+                    "self": {
+                      "kind": "random",
+                      "targetTraitKey": null
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "401f8ed8-62e7-422e-8373-7cc7d0498a38",
+              "gameName": "F_Combat07",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCurrencyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "artificer"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "Mage",
+                            "SiegeVine"
+                          ],
+                          "allocations": {
+                            "Mage": 70
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  },
+                  {
+                    "kind": "interactAcquisitionEntry",
+                    "siteKey": "[\"acquisitionSite\",\"Underworld\",\"F\",\"[\\\"occurrence\\\",\\\"Underworld\\\",\\\"F\\\",\\\"401f8ed8-62e7-422e-8373-7cc7d0498a38\\\"]\",\"artificerSource:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%22401f8ed8-62e7-422e-8373-7cc7d0498a38%22%5D\"]",
+                    "entryKey": "artificer:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%22401f8ed8-62e7-422e-8373-7cc7d0498a38%22%5D:self"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "[\"acquisitionSite\",\"Underworld\",\"F\",\"[\\\"occurrence\\\",\\\"Underworld\\\",\\\"F\\\",\\\"401f8ed8-62e7-422e-8373-7cc7d0498a38\\\"]\",\"artificerSource:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%22401f8ed8-62e7-422e-8373-7cc7d0498a38%22%5D\"]": {
+                  "pickupEntries": {
+                    "artificer:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%22401f8ed8-62e7-422e-8373-7cc7d0498a38%22%5D:self": {
+                      "offer": {
+                        "rewardType": "Boon",
+                        "payload": {
+                          "kind": "BoonSource",
+                          "source": "ApolloUpgrade"
+                        }
+                      },
+                      "traitOffersByAcquisitionRole": {
+                        "source": {
+                          "kind": "traits",
+                          "giverKey": "Apollo",
+                          "options": [
+                            {
+                              "traitKey": "ApolloWeaponBoon",
+                              "rarity": "Epic",
+                              "persephoneLevelBonus": 5
+                            },
+                            {
+                              "traitKey": "ApolloSpecialBoon",
+                              "rarity": "Common"
+                            },
+                            {
+                              "traitKey": "ApolloCastBoon",
+                              "rarity": "Common"
+                            }
+                          ],
+                          "selectedOptionKey": "option1",
+                          "rarificationActions": []
+                        }
+                      },
+                      "dispositionByAcquisitionRole": {
+                        "source": {
+                          "kind": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "62de1af9-5f4b-4a2e-8534-c7d2fdbedf0d",
+              "gameName": "F_Combat09",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "HeraUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": {
+                      "kind": "traits",
+                      "giverKey": "Hera",
+                      "options": [
+                        {
+                          "traitKey": "HeraWeaponBoon",
+                          "rarity": "Heroic"
+                        },
+                        {
+                          "traitKey": "HeraSpecialBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "HeraManaBoon",
+                          "rarity": "Epic",
+                          "persephoneLevelBonus": 5
+                        }
+                      ],
+                      "selectedOptionKey": "option3",
+                      "rarificationActions": []
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "SiegeVine_Elite",
+                            "Brawler"
+                          ],
+                          "allocations": {
+                            "SiegeVine_Elite": 50
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "source"
+                  },
+                  {
+                    "kind": "purchaseStygianWellOffer",
+                    "generationKey": "initial:healing"
+                  },
+                  {
+                    "kind": "purchaseStygianWellOffer",
+                    "generationKey": "initial:secondLeft"
+                  }
+                ]
+              },
+              "stygianWell": {
+                "interacted": true,
+                "offerKeyBySlot": {
+                  "healing": "DamageSelfDrop",
+                  "secondLeft": "TemporaryForcedSecretDoorTrait",
+                  "secondRight": "SeedMysteryRange"
+                },
+                "purchasedGenerationKeys": [
+                  "initial:healing",
+                  "initial:secondLeft"
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c",
+              "gameName": "F_Combat04",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "RoomMoneyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "ArachneCombatF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "traitOffersByPhase": {
+                  "Encounter": {
+                    "ArtemisCombatF": {
+                      "kind": "traits",
+                      "giverKey": "Artemis",
+                      "options": [
+                        {
+                          "traitKey": "HighHealthCritBoon",
+                          "rarity": "Epic"
+                        },
+                        {
+                          "traitKey": "CritBonusBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "DashOmegaBuffBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "cocoonCount": {
+                      "kind": "cocoonCount",
+                      "count": 8
+                    },
+                    "cocoonRewardPoint": {
+                      "kind": "cocoonRewardPoint",
+                      "spawnPointId": 510191
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": [
+                {
+                  "kind": "chaos",
+                  "key": "chaos",
+                  "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c:chaos",
+                  "origin": {
+                    "kind": "ixionGenerated",
+                    "sourceBiomeKey": "F",
+                    "sourceOccurrenceId": "62de1af9-5f4b-4a2e-8534-c7d2fdbedf0d",
+                    "generationKey": "initial:secondLeft"
+                  }
+                }
+              ]
+            },
+            {
+              "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c:chaos",
+              "gameName": "Chaos_04",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "TrialUpgrade"
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "self": {
+                      "kind": "chaos",
+                      "giverKey": "Chaos",
+                      "curseOptions": [
+                        {
+                          "curseKey": "ChaosTimeCurse",
+                          "requirementCount": 2
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "selectedCurseValues": {},
+                      "blessingKey": "ChaosSpeedBlessing",
+                      "rarity": "Epic",
+                      "blessingValues": {}
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "d7623878-0c48-4bd5-b136-afc591f72144",
+              "gameName": "F_Combat06",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCardPointsCommonDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "71adcdc7-7c22-4a99-afa9-e6a0d29f0967",
+              "gameName": "F_Combat21",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "GiftDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "levelResolutionsByAcquisitionRole": {
+                    "self": {
+                      "kind": "random",
+                      "targetTraitKey": null
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "de161d7e-3a55-4d02-a85c-9a4c44965a43",
+              "gameName": "F_Shop01",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "WorldShop",
+                  "offers": {
+                    "Boon": {
+                      "optionKey": "RandomLoot",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "RandomLoot",
+                          "payload": {
+                            "kind": "BoonSource",
+                            "source": "HeraUpgrade"
+                          }
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "source": {
+                            "kind": "traits",
+                            "giverKey": "Hera",
+                            "options": [
+                              {
+                                "traitKey": "HeraWeaponBoon",
+                                "rarity": "Heroic"
+                              },
+                              {
+                                "traitKey": "HeraSpecialBoon",
+                                "rarity": "Common"
+                              },
+                              {
+                                "traitKey": "HeraCastBoon",
+                                "rarity": "Epic",
+                                "persephoneLevelBonus": 5
+                              }
+                            ],
+                            "selectedOptionKey": "option3",
+                            "rarificationActions": []
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "source": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MajorNonBoon": {
+                      "optionKey": "MetaCurrencyDrop",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "MetaCurrencyDrop"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Minor": {
+                      "optionKey": "StoreRewardRandomStack",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StoreRewardRandomStack"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "random",
+                            "targetTraitKey": null
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactShopOffer",
+                    "offerKey": "Boon"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "3ca7eb0f-24e1-4a1c-b4ee-ce4b73576423",
+              "gameName": "F_MiniBoss02",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "AphroditeUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": null
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "af9543b0-b3ec-4ea0-82c6-6863c96c8c64",
+              "gameName": "F_MiniBoss03",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "HeraUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": {
+                      "kind": "traits",
+                      "giverKey": "Hera",
+                      "options": [
+                        {
+                          "traitKey": "SpawnCastDamageBoon",
+                          "rarity": "Epic",
+                          "persephoneLevelBonus": 5
+                        },
+                        {
+                          "traitKey": "HeraSpecialBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "HeraSprintBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "source"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "ac256df7-eada-41f3-bb93-32a212a41f47",
+              "gameName": "F_MiniBoss01",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "AphroditeUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": null
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "41a9a5af-0a4e-4580-a7d7-a0fa80e01a45",
+              "gameName": "F_Reprieve01",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCurrencyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "artificer"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  },
+                  {
+                    "kind": "interactAcquisitionEntry",
+                    "siteKey": "[\"acquisitionSite\",\"Underworld\",\"F\",\"[\\\"occurrence\\\",\\\"Underworld\\\",\\\"F\\\",\\\"41a9a5af-0a4e-4580-a7d7-a0fa80e01a45\\\"]\",\"artificerSource:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%2241a9a5af-0a4e-4580-a7d7-a0fa80e01a45%22%5D\"]",
+                    "entryKey": "artificer:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%2241a9a5af-0a4e-4580-a7d7-a0fa80e01a45%22%5D:self"
+                  },
+                  {
+                    "kind": "useFountain"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "[\"acquisitionSite\",\"Underworld\",\"F\",\"[\\\"occurrence\\\",\\\"Underworld\\\",\\\"F\\\",\\\"41a9a5af-0a4e-4580-a7d7-a0fa80e01a45\\\"]\",\"artificerSource:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%2241a9a5af-0a4e-4580-a7d7-a0fa80e01a45%22%5D\"]": {
+                  "pickupEntries": {
+                    "artificer:%5B%22incomingReward%22%2C%22Underworld%22%2C%22F%22%2C%2241a9a5af-0a4e-4580-a7d7-a0fa80e01a45%22%5D:self": {
+                      "offer": {
+                        "rewardType": "Boon",
+                        "payload": {
+                          "kind": "BoonSource",
+                          "source": "ApolloUpgrade"
+                        }
+                      },
+                      "traitOffersByAcquisitionRole": {
+                        "source": {
+                          "kind": "traits",
+                          "giverKey": "Apollo",
+                          "options": [
+                            {
+                              "traitKey": "ApolloCastBoon",
+                              "rarity": "Heroic"
+                            },
+                            {
+                              "traitKey": "ApolloSpecialBoon",
+                              "rarity": "Common"
+                            },
+                            {
+                              "traitKey": "ApolloSprintBoon",
+                              "rarity": "Epic",
+                              "persephoneLevelBonus": 5
+                            }
+                          ],
+                          "selectedOptionKey": "option3",
+                          "rarificationActions": []
+                        }
+                      },
+                      "dispositionByAcquisitionRole": {
+                        "source": {
+                          "kind": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "09797d99-8be2-4a42-8102-0f9dd5a0a577",
+              "gameName": "F_Story01",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Story"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {}
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "traitOffersByPhase": {
+                  "Encounter": {
+                    "Story_Arachne_01": {
+                      "kind": "traits",
+                      "giverKey": "Arachne",
+                      "options": [
+                        {
+                          "traitKey": "IncomeCostume"
+                        },
+                        {
+                          "traitKey": "ManaCostume"
+                        },
+                        {
+                          "traitKey": "VitalityCostume"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactEncounter",
+                    "phaseKey": "Encounter"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "ee76b039-1231-42fe-8384-462e90a7753d",
+              "gameName": "F_Combat20",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCurrencyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "d8cfe45b-3e0c-4e75-a118-e19af73ca023",
+              "gameName": "F_Combat15",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "StackUpgrade"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "levelResolutionsByAcquisitionRole": {
+                    "self": {
+                      "kind": "choice",
+                      "offeredTraitKeys": [
+                        "HeraManaBoon",
+                        "ApolloWeaponBoon",
+                        "HeraCastBoon"
+                      ],
+                      "selectedTraitKey": "ApolloWeaponBoon"
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "ArtemisCombatF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "traitOffersByPhase": {
+                  "Encounter": {
+                    "ArtemisCombatF": {
+                      "kind": "traits",
+                      "giverKey": "Artemis",
+                      "options": [
+                        {
+                          "traitKey": "HighHealthCritBoon",
+                          "rarity": "Epic"
+                        },
+                        {
+                          "traitKey": "CritBonusBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "DashOmegaBuffBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  },
+                  {
+                    "kind": "interactEncounter",
+                    "phaseKey": "Encounter"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "923a1377-d519-416d-9cd1-2a49f0fd303e",
+              "gameName": "F_Combat17",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MaxHealthDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa",
+              "gameName": "F_PreBoss01",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "WorldShop",
+                  "offers": {
+                    "Boon": {
+                      "optionKey": "RandomLoot",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "RandomLoot",
+                          "payload": {
+                            "kind": "BoonSource",
+                            "source": "PoseidonUpgrade"
+                          }
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "source": {
+                            "kind": "traits",
+                            "giverKey": "Poseidon",
+                            "options": [
+                              {
+                                "traitKey": "PoseidonWeaponBoon",
+                                "rarity": "Heroic"
+                              },
+                              {
+                                "traitKey": "PoseidonSpecialBoon",
+                                "rarity": "Common"
+                              },
+                              {
+                                "traitKey": "EncounterStartOffenseBuffBoon",
+                                "rarity": "Epic",
+                                "persephoneLevelBonus": 5
+                              }
+                            ],
+                            "selectedOptionKey": "option3",
+                            "rarificationActions": []
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "source": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MajorNonBoon": {
+                      "optionKey": "ArmorBoost",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "ArmorBoost"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Minor": {
+                      "optionKey": "StoreRewardRandomStack",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StoreRewardRandomStack"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "random",
+                            "targetTraitKey": null
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "infernalContractReward": {
+                      "optionKey": null,
+                      "reward": null
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactShopOffer",
+                    "offerKey": "Boon"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "414e7ec0-d66c-403b-83de-0c932b0fa3ef",
+              "gameName": "F_PreBoss01",
+              "state": {
+                "kind": "freeReward",
+                "reward": {
+                  "offer": {
+                    "rewardType": "StackUpgrade"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "levelResolutionsByAcquisitionRole": {
+                    "self": {
+                      "kind": "choice",
+                      "offeredTraitKeys": [],
+                      "selectedTraitKey": null
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:boss",
+              "gameName": "F_Boss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "customizationByPhase": {
+                  "Encounter": {
+                    "interlude": {
+                      "kind": "single",
+                      "choiceKey": "laser"
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "collectRequiredReward"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:postboss",
+              "gameName": "F_PostBoss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "useFountain"
+                  },
+                  {
+                    "kind": "interactKeepsakeRack"
+                  },
+                  {
+                    "kind": "purchaseStygianWellOffer",
+                    "generationKey": "initial:healing"
+                  },
+                  {
+                    "kind": "purchaseStygianWellOffer",
+                    "generationKey": "initial:secondLeft"
+                  }
+                ]
+              },
+              "stygianWell": {
+                "interacted": true,
+                "offerKeyBySlot": {
+                  "healing": "DamageSelfDrop",
+                  "secondLeft": "TemporaryForcedSecretDoorTrait",
+                  "secondRight": "SeedMysteryRange"
+                },
+                "purchasedGenerationKeys": [
+                  "initial:healing",
+                  "initial:secondLeft"
+                ]
+              },
+              "purgingPool": {
+                "interacted": false,
+                "traitKeyBySlot": {
+                  "left": null,
+                  "middle": null,
+                  "right": null
+                }
+              },
+              "keepsakeRack": {
+                "keepsakeKey": "SkipEncounterKeepsake"
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "7f6834aa-a2b8-4df1-8d27-9cbd6ced3b46",
+              "gameName": "F_Combat06",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MaxHealthDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedF"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            }
+          ],
+          "decisions": [
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "79df3c98-12ab-4d1c-8e0d-36d36e2260d8"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "96d78ad5-5d09-4f53-a79a-cacfb0238f43"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "additional",
+                "additionalExitKey": "chaos"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "f2b3a96e-2dc2-4cf4-9499-8b7e722e257c"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "9ad9c2cc-30a6-48c7-ac8b-47c6eadc7666"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "401f8ed8-62e7-422e-8373-7cc7d0498a38"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit2"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "401f8ed8-62e7-422e-8373-7cc7d0498a38"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "62de1af9-5f4b-4a2e-8534-c7d2fdbedf0d"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "7f6834aa-a2b8-4df1-8d27-9cbd6ced3b46"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "62de1af9-5f4b-4a2e-8534-c7d2fdbedf0d"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "d7623878-0c48-4bd5-b136-afc591f72144"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "71adcdc7-7c22-4a99-afa9-e6a0d29f0967"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "additional",
+                "additionalExitKey": "chaos"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "658d0329-71aa-48e8-ba19-73526b493b9c:chaos"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "de161d7e-3a55-4d02-a85c-9a4c44965a43"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "3ca7eb0f-24e1-4a1c-b4ee-ce4b73576423"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "de161d7e-3a55-4d02-a85c-9a4c44965a43"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "af9543b0-b3ec-4ea0-82c6-6863c96c8c64"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "ac256df7-eada-41f3-bb93-32a212a41f47"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "af9543b0-b3ec-4ea0-82c6-6863c96c8c64"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "41a9a5af-0a4e-4580-a7d7-a0fa80e01a45"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "41a9a5af-0a4e-4580-a7d7-a0fa80e01a45"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "09797d99-8be2-4a42-8102-0f9dd5a0a577"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "ee76b039-1231-42fe-8384-462e90a7753d"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "09797d99-8be2-4a42-8102-0f9dd5a0a577"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "d8cfe45b-3e0c-4e75-a118-e19af73ca023"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "923a1377-d519-416d-9cd1-2a49f0fd303e"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "d8cfe45b-3e0c-4e75-a118-e19af73ca023"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "414e7ec0-d66c-403b-83de-0c932b0fa3ef"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            }
+          ],
+          "fixedRoomLinks": [
+            {
+              "sourceOccurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa",
+              "targetOccurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:boss"
+            },
+            {
+              "sourceOccurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:boss",
+              "targetOccurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:postboss"
+            }
+          ]
+        }
+      },
+      {
+        "biomeKey": "G",
+        "state": {},
+        "topology": {
+          "startOccurrenceId": "G:start",
+          "occurrences": [
+            {
+              "occurrenceId": "G:start",
+              "gameName": "G_Intro",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {},
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": [
+                {
+                  "kind": "chaos",
+                  "key": "chaos",
+                  "occurrenceId": "G:start:chaos",
+                  "origin": {
+                    "kind": "ixionGenerated",
+                    "sourceBiomeKey": "F",
+                    "sourceOccurrenceId": "a35966fe-3b8a-4e8b-ae68-8bd91a058eaa:postboss",
+                    "generationKey": "initial:secondLeft"
+                  }
+                }
+              ]
+            },
+            {
+              "occurrenceId": "G:start:chaos",
+              "gameName": "Chaos_05",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "TrialUpgrade"
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "self": {
+                      "kind": "chaos",
+                      "giverKey": "Chaos",
+                      "curseOptions": [
+                        {
+                          "curseKey": "ChaosTimeCurse",
+                          "requirementCount": 2
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        },
+                        {
+                          "curseKey": "ChaosNoMoneyCurse",
+                          "requirementCount": 4
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "selectedCurseValues": {},
+                      "blessingKey": "ChaosSpeedBlessing",
+                      "rarity": "Epic",
+                      "blessingValues": {}
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c2b6b373-1432-4764-9f6f-0b51363a28ca",
+              "gameName": "G_Combat06",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCardPointsCommonBigDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c0517b8a-af60-4348-b92a-b417a1640c05",
+              "gameName": "G_Combat05",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCardPointsCommonBigDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "ArachneCombatG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "cocoonCount": {
+                      "kind": "cocoonCount",
+                      "count": 8
+                    },
+                    "cocoonRewardPoint": {
+                      "kind": "cocoonRewardPoint",
+                      "spawnPointId": 568808
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "8a857a6e-a412-4e6a-a3e3-020496c344a9",
+              "gameName": "G_Combat19",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCurrencyBigDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "52e564a4-85c1-4e41-8ff8-d99eb00571af",
+              "gameName": "G_Combat18",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "GiftDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "levelResolutionsByAcquisitionRole": {
+                    "self": {
+                      "kind": "random",
+                      "targetTraitKey": null
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "bbc17ade-d9be-432d-89f7-06d224c82dc7",
+              "gameName": "G_Combat01",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "ApolloUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": {
+                      "kind": "traits",
+                      "giverKey": "Apollo",
+                      "options": [
+                        {
+                          "traitKey": "ApolloBlindBoon",
+                          "rarity": "Epic",
+                          "persephoneLevelBonus": 5
+                        },
+                        {
+                          "traitKey": "ApolloSpecialBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "ApolloRetaliateBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "FishmanMelee_Elite"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  },
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "source"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "b65f251c-d0b6-45cd-98ac-74d3f66ced64",
+              "gameName": "G_Combat19",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MaxManaDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "2124ca7d-6018-433e-ad76-a1971468c1ca",
+              "gameName": "G_Combat08",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "RoomMoneyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "ab45b46c-4bb4-406a-91b8-8673c65d37ba",
+              "gameName": "G_Shop01",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "WorldShop",
+                  "offers": {
+                    "Boon": {
+                      "optionKey": "RandomLoot",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "RandomLoot",
+                          "payload": {
+                            "kind": "BoonSource",
+                            "source": "ApolloUpgrade"
+                          }
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "source": {
+                            "kind": "traits",
+                            "giverKey": "Apollo",
+                            "options": [
+                              {
+                                "traitKey": "DoubleExManaBoon",
+                                "rarity": "Legendary"
+                              },
+                              {
+                                "traitKey": "ApolloSpecialBoon",
+                                "rarity": "Common"
+                              },
+                              {
+                                "traitKey": "ApolloRetaliateBoon",
+                                "rarity": "Common"
+                              }
+                            ],
+                            "selectedOptionKey": "option1",
+                            "rarificationActions": []
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "source": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MajorNonBoon": {
+                      "optionKey": "MetaCardPointsCommonDrop",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "MetaCardPointsCommonDrop"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Minor": {
+                      "optionKey": "SpellDrop",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "SpellDrop"
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "self": null
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactShopOffer",
+                    "offerKey": "Boon"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "cadac411-ca5a-4d31-b377-a927b3796a54",
+              "gameName": "G_Combat02",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCardPointsCommonBigDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "06e5450a-767e-4c64-83cc-745df903a456",
+              "gameName": "G_MiniBoss03",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "HeraUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": {
+                      "kind": "traits",
+                      "giverKey": "Hera",
+                      "options": [
+                        {
+                          "traitKey": "BoonDecayBoon",
+                          "rarity": "Epic",
+                          "targetTraitKey": "ApolloSprintBoon"
+                        },
+                        {
+                          "traitKey": "HeraSpecialBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "DamageShareRetaliateBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "source"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "78f417ab-d0ae-46bd-9961-8c3f95152a05",
+              "gameName": "G_MiniBoss02",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "ApolloUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": null
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "4d76a9f7-78b2-469a-9e13-f0b302663906",
+              "gameName": "G_Story01",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Story"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {}
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "traitOffersByPhase": {
+                  "Encounter": {
+                    "Story_Narcissus_01": {
+                      "kind": "traits",
+                      "giverKey": "Narcissus",
+                      "options": [
+                        {
+                          "traitKey": "NarcissusI"
+                        },
+                        {
+                          "traitKey": "NarcissusB"
+                        },
+                        {
+                          "traitKey": "NarcissusC"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactEncounter",
+                    "phaseKey": "Encounter"
+                  },
+                  {
+                    "kind": "interactAcquisitionEntry",
+                    "siteKey": "traitGenerated:%5B%22traitOffer%22%2C%22Underworld%22%2C%22G%22%2C%22%5B%5C%22encounterPhase%5C%22%2C%5C%22Underworld%5C%22%2C%5C%22G%5C%22%2C%7B%5C%22kind%5C%22%3A%5C%22occurrence%5C%22%2C%5C%22occurrenceId%5C%22%3A%5C%224d76a9f7-78b2-469a-9e13-f0b302663906%5C%22%7D%2C%5C%22Encounter%5C%22%5D%22%2C%22Story_Narcissus_01%22%5D:option1",
+                    "entryKey": "mysteryBoon"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "traitGenerated:%5B%22traitOffer%22%2C%22Underworld%22%2C%22G%22%2C%22%5B%5C%22encounterPhase%5C%22%2C%5C%22Underworld%5C%22%2C%5C%22G%5C%22%2C%7B%5C%22kind%5C%22%3A%5C%22occurrence%5C%22%2C%5C%22occurrenceId%5C%22%3A%5C%224d76a9f7-78b2-469a-9e13-f0b302663906%5C%22%7D%2C%5C%22Encounter%5C%22%5D%22%2C%22Story_Narcissus_01%22%5D:option1": {
+                  "pickupEntries": {
+                    "mysteryBoon": {
+                      "offer": {
+                        "rewardType": "BlindBoxLoot",
+                        "payload": {
+                          "kind": "BoonSource",
+                          "source": "DemeterUpgrade"
+                        }
+                      },
+                      "traitOffersByAcquisitionRole": {
+                        "hiddenSource": {
+                          "kind": "traits",
+                          "giverKey": "Demeter",
+                          "options": [
+                            {
+                              "traitKey": "SlowExAttackBoon",
+                              "rarity": "Epic",
+                              "persephoneLevelBonus": 5
+                            },
+                            {
+                              "traitKey": "DemeterSpecialBoon",
+                              "rarity": "Common"
+                            },
+                            {
+                              "traitKey": "CastNovaBoon",
+                              "rarity": "Common"
+                            }
+                          ],
+                          "selectedOptionKey": "option1",
+                          "rarificationActions": []
+                        }
+                      },
+                      "dispositionByAcquisitionRole": {
+                        "box": {
+                          "kind": "normal"
+                        },
+                        "hiddenSource": {
+                          "kind": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "933a70ab-25b1-4940-afb3-8ede4d8432c5",
+              "gameName": "G_Combat20",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MetaCardPointsCommonBigDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "0309404f-ea92-4cf9-b745-aa6f61901c1b",
+              "gameName": "G_Combat07",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "RoomMoneyDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedG"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "Turtle_Elite"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "self"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696",
+              "gameName": "G_PreBoss01",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "WorldShop",
+                  "offers": {
+                    "Boon": {
+                      "optionKey": "ShopHermesUpgrade",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "ShopHermesUpgrade"
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "hermes": {
+                            "kind": "traits",
+                            "giverKey": "Hermes",
+                            "options": [
+                              {
+                                "traitKey": "LuckyBoon",
+                                "rarity": "Epic"
+                              },
+                              {
+                                "traitKey": "HermesSpecialBoon",
+                                "rarity": "Common"
+                              },
+                              {
+                                "traitKey": "HermesCastDiscountBoon",
+                                "rarity": "Common"
+                              }
+                            ],
+                            "selectedOptionKey": "option1",
+                            "rarificationActions": []
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "hermes": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MajorNonBoon": {
+                      "optionKey": "MetaCardPointsCommonDrop",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "MetaCardPointsCommonDrop"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Minor": {
+                      "optionKey": "StoreRewardRandomStack",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StoreRewardRandomStack"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "random",
+                            "targetTraitKey": null
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "infernalContractReward": {
+                      "optionKey": null,
+                      "reward": null
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactShopOffer",
+                    "offerKey": "Boon"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "3c9a5a77-332a-46a6-8272-6768e99938ca",
+              "gameName": "G_PreBoss01",
+              "state": {
+                "kind": "freeReward",
+                "reward": {
+                  "offer": {
+                    "rewardType": "MaxManaDrop"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {
+                    "self": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696:boss",
+              "gameName": "G_Boss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "customizationByPhase": {
+                  "Encounter": {
+                    "featuredPerformer": {
+                      "kind": "single",
+                      "choiceKey": "jetty"
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "collectRequiredReward"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696:postboss",
+              "gameName": "G_PostBoss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "useFountain"
+                  },
+                  {
+                    "kind": "interactKeepsakeRack"
+                  }
+                ]
+              },
+              "stygianWell": {
+                "interacted": false,
+                "offerKeyBySlot": {
+                  "healing": null,
+                  "secondLeft": null,
+                  "secondRight": null
+                }
+              },
+              "purgingPool": {
+                "interacted": false,
+                "traitKeyBySlot": {
+                  "left": null,
+                  "middle": null,
+                  "right": null
+                }
+              },
+              "keepsakeRack": {
+                "keepsakeKey": "AthenaEncounterKeepsake",
+                "equipResults": {
+                  "transcendentEmbryo": {
+                    "blessingKey": "ChaosHealthBlessing",
+                    "blessingValues": {
+                      "health": 92
+                    }
+                  }
+                }
+              },
+              "additionalExits": []
+            }
+          ],
+          "decisions": [
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "G:start"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "c2b6b373-1432-4764-9f6f-0b51363a28ca"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "additional",
+                "additionalExitKey": "chaos"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "G:start:chaos"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "c0517b8a-af60-4348-b92a-b417a1640c05"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "8a857a6e-a412-4e6a-a3e3-020496c344a9"
+                  },
+                  {
+                    "exitKey": "exit3",
+                    "occurrenceId": "52e564a4-85c1-4e41-8ff8-d99eb00571af"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "c0517b8a-af60-4348-b92a-b417a1640c05"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "bbc17ade-d9be-432d-89f7-06d224c82dc7"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "b65f251c-d0b6-45cd-98ac-74d3f66ced64"
+                  },
+                  {
+                    "exitKey": "exit3",
+                    "occurrenceId": "2124ca7d-6018-433e-ad76-a1971468c1ca"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "bbc17ade-d9be-432d-89f7-06d224c82dc7"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "ab45b46c-4bb4-406a-91b8-8673c65d37ba"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "cadac411-ca5a-4d31-b377-a927b3796a54"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "ab45b46c-4bb4-406a-91b8-8673c65d37ba"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "06e5450a-767e-4c64-83cc-745df903a456"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "78f417ab-d0ae-46bd-9961-8c3f95152a05"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "06e5450a-767e-4c64-83cc-745df903a456"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "4d76a9f7-78b2-469a-9e13-f0b302663906"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "933a70ab-25b1-4940-afb3-8ede4d8432c5"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "4d76a9f7-78b2-469a-9e13-f0b302663906"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "RunProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "0309404f-ea92-4cf9-b745-aa6f61901c1b"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "0309404f-ea92-4cf9-b745-aa6f61901c1b"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "authoredBaseStore",
+                  "baseRewardStoreKey": "MetaProgress"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "3c9a5a77-332a-46a6-8272-6768e99938ca"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            }
+          ],
+          "fixedRoomLinks": [
+            {
+              "sourceOccurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696",
+              "targetOccurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696:boss",
+              "rewardStoreKey": "MetaProgress"
+            },
+            {
+              "sourceOccurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696:boss",
+              "targetOccurrenceId": "aa141578-913c-47e9-8eae-f90a3970a696:postboss"
+            }
+          ]
+        }
+      },
+      {
+        "biomeKey": "H",
+        "state": {},
+        "topology": {
+          "startOccurrenceId": "H:start",
+          "occurrences": [
+            {
+              "occurrenceId": "H:start",
+              "gameName": "H_Intro",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {},
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "fe278941-5986-4de9-9e75-b281be0cc589",
+              "gameName": "H_Combat15",
+              "state": {
+                "kind": "fieldsCombat",
+                "cages": {
+                  "cage1": {
+                    "offer": {
+                      "rewardType": "RoomMoneyDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage2": {
+                    "offer": {
+                      "rewardType": "StackUpgrade"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "levelResolutionsByAcquisitionRole": {
+                      "self": {
+                        "kind": "choice",
+                        "offeredTraitKeys": [
+                          "HeraManaBoon",
+                          "ApolloWeaponBoon",
+                          "HeraCastBoon"
+                        ],
+                        "selectedTraitKey": "ApolloWeaponBoon"
+                      }
+                    },
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage3": null
+                },
+                "optionalRewardCount": 0,
+                "optionalRewards": {
+                  "optional1": null,
+                  "optional2": null
+                },
+                "spatial": {
+                  "entryStartPointId": 760468,
+                  "cagePointIdBySlot": {
+                    "cage1": 737530,
+                    "cage2": 737521,
+                    "cage3": null
+                  },
+                  "optionalPointIdBySlot": {
+                    "optional1": null,
+                    "optional2": null
+                  },
+                  "nemesisPointId": null
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Passive": "GeneratedH_PassiveSmall",
+                  "Cage01": "GeneratedH",
+                  "Cage02": "NemesisCombatH",
+                  "Cage03": "GeneratedH"
+                },
+                "figLeafSkipByPhase": {
+                  "Passive": false,
+                  "Cage01": true,
+                  "Cage02": false,
+                  "Cage03": false
+                },
+                "gorgonResultByPhase": {
+                  "Passive": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage01": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage02": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage03": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage01"
+                  },
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage02"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage1"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage2"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "f51432fc-5c63-4686-99aa-4bcbcee5983b",
+              "gameName": "H_Combat09",
+              "state": {
+                "kind": "fieldsCombat",
+                "cages": {
+                  "cage1": {
+                    "offer": {
+                      "rewardType": "HermesUpgrade"
+                    },
+                    "traitOffersByAcquisitionRole": {
+                      "self": {
+                        "kind": "traits",
+                        "giverKey": "Hermes",
+                        "options": [
+                          {
+                            "traitKey": "SprintShieldBoon",
+                            "rarity": "Epic"
+                          },
+                          {
+                            "traitKey": "HermesSpecialBoon",
+                            "rarity": "Common"
+                          },
+                          {
+                            "traitKey": "HermesCastDiscountBoon",
+                            "rarity": "Common"
+                          }
+                        ],
+                        "selectedOptionKey": "option1",
+                        "rarificationActions": []
+                      }
+                    },
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage2": {
+                    "offer": {
+                      "rewardType": "WeaponUpgrade"
+                    },
+                    "traitOffersByAcquisitionRole": {
+                      "self": {
+                        "kind": "traits",
+                        "giverKey": "WeaponUpgrade",
+                        "options": [
+                          {
+                            "traitKey": "LobAmmoTrait"
+                          },
+                          {
+                            "traitKey": "LobAmmoMagnetismTrait"
+                          },
+                          {
+                            "traitKey": "LobRushArmorTrait"
+                          }
+                        ],
+                        "selectedOptionKey": "option1",
+                        "rarificationActions": []
+                      }
+                    },
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage3": null
+                },
+                "optionalRewardCount": 2,
+                "optionalRewards": {
+                  "optional1": {
+                    "offer": {
+                      "rewardType": "RoomRewardHealDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "optional2": {
+                    "offer": {
+                      "rewardType": "RoomMoneyTinyDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  }
+                },
+                "spatial": {
+                  "entryStartPointId": 755837,
+                  "cagePointIdBySlot": {
+                    "cage1": 621502,
+                    "cage2": 715348,
+                    "cage3": null
+                  },
+                  "optionalPointIdBySlot": {
+                    "optional1": 715349,
+                    "optional2": 572849
+                  },
+                  "nemesisPointId": null
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Passive": "GeneratedH_PassiveSmall",
+                  "Cage01": "GeneratedH",
+                  "Cage02": "GeneratedH",
+                  "Cage03": "GeneratedH"
+                },
+                "figLeafSkipByPhase": {
+                  "Passive": false,
+                  "Cage01": false,
+                  "Cage02": false,
+                  "Cage03": false
+                },
+                "gorgonResultByPhase": {
+                  "Passive": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage01": {
+                    "athenaTriggerConditionMet": true,
+                    "athenaOffer": {
+                      "traitKeys": [
+                        "InvulnerabilityCastBoon",
+                        "RetaliateInvulnerabilityBoon",
+                        "FocusLastStandBoon"
+                      ],
+                      "selectedOptionKey": "option1"
+                    }
+                  },
+                  "Cage02": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage03": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Cage01": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "Mourner_Elite",
+                            "Lycanthrope_Elite"
+                          ],
+                          "allocations": {
+                            "Mourner_Elite": 268
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "Cage02": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "Lycanthrope_Elite",
+                            "Mourner_Elite"
+                          ],
+                          "allocations": {
+                            "Lycanthrope_Elite": 268
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage01"
+                  },
+                  {
+                    "kind": "interactGorgon",
+                    "phaseKey": "Cage01"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage1"
+                  },
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage02"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage2"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "2a438f57-be1e-4167-b56f-720073ddb3aa",
+              "gameName": "H_Combat02",
+              "state": {
+                "kind": "fieldsCombat",
+                "cages": {
+                  "cage1": {
+                    "offer": {
+                      "rewardType": "SpellDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {
+                      "self": null
+                    },
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage2": {
+                    "offer": {
+                      "rewardType": "MaxManaDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage3": null
+                },
+                "optionalRewardCount": 2,
+                "optionalRewards": {
+                  "optional1": null,
+                  "optional2": null,
+                  "optional3": null
+                },
+                "spatial": {
+                  "entryStartPointId": null,
+                  "cagePointIdBySlot": {
+                    "cage1": null,
+                    "cage2": null,
+                    "cage3": null
+                  },
+                  "optionalPointIdBySlot": {
+                    "optional1": null,
+                    "optional2": null,
+                    "optional3": null
+                  },
+                  "nemesisPointId": null
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Passive": "GeneratedH_PassiveSmall",
+                  "Cage01": "GeneratedH",
+                  "Cage02": "GeneratedH",
+                  "Cage03": "GeneratedH"
+                },
+                "figLeafSkipByPhase": {
+                  "Passive": false,
+                  "Cage01": false,
+                  "Cage02": false,
+                  "Cage03": false
+                },
+                "gorgonResultByPhase": {
+                  "Passive": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage01": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage02": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage03": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage01"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage1"
+                  },
+                  {
+                    "kind": "completeFieldsCage",
+                    "phaseKey": "Cage02"
+                  },
+                  {
+                    "kind": "interactLocalReward",
+                    "groupKey": "cages",
+                    "slotKey": "cage2"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "decfa386-8281-4efe-86fd-51ce3ede2490",
+              "gameName": "H_Bridge01",
+              "state": {
+                "kind": "fixed",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Story"
+                  },
+                  "traitOffersByAcquisitionRole": {},
+                  "dispositionByAcquisitionRole": {}
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "traitOffersByPhase": {
+                  "Encounter": {
+                    "Story_Echo_01": {
+                      "kind": "traits",
+                      "giverKey": "Echo",
+                      "options": [
+                        {
+                          "traitKey": "EchoLastReward"
+                        },
+                        {
+                          "traitKey": "EchoDoubleLevelBoon",
+                          "echoPomTarget": "ApolloSprintBoon"
+                        },
+                        {
+                          "traitKey": "EchoDoubleShop"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactEncounter",
+                    "phaseKey": "Encounter"
+                  },
+                  {
+                    "kind": "interactAcquisitionEntry",
+                    "siteKey": "roomExit",
+                    "entryKey": "echoLastReward:Encounter:Story_Echo_01:option1"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {
+                  "pickupEntries": {
+                    "echoLastReward:Encounter:Story_Echo_01:option1": {
+                      "offer": {
+                        "rewardType": "WeaponUpgrade"
+                      },
+                      "traitOffersByAcquisitionRole": {
+                        "self": {
+                          "kind": "traits",
+                          "giverKey": "WeaponUpgrade",
+                          "options": [
+                            {
+                              "traitKey": "LobAmmoMagnetismTrait"
+                            },
+                            {
+                              "traitKey": "LobRushArmorTrait"
+                            },
+                            {
+                              "traitKey": "LobSpecialSpeedTrait"
+                            }
+                          ],
+                          "selectedOptionKey": "option1",
+                          "rarificationActions": []
+                        }
+                      },
+                      "dispositionByAcquisitionRole": {
+                        "self": {
+                          "kind": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "fc60cb21-5678-4c1f-996c-ad7b14132a48",
+              "gameName": "H_MiniBoss02",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "ApolloUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": {
+                      "kind": "traits",
+                      "giverKey": "Apollo",
+                      "options": [
+                        {
+                          "traitKey": "DoubleStrikeChanceBoon",
+                          "rarity": "Epic",
+                          "persephoneLevelBonus": 5
+                        },
+                        {
+                          "traitKey": "ApolloSpecialBoon",
+                          "rarity": "Common"
+                        },
+                        {
+                          "traitKey": "ApolloRetaliateBoon",
+                          "rarity": "Common"
+                        }
+                      ],
+                      "selectedOptionKey": "option1",
+                      "rarificationActions": []
+                    }
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactIncomingReward",
+                    "producerPoint": "roomRewardPickup",
+                    "acquisitionRole": "source"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c7919e0c-0541-4495-84c5-1ef098a909a4",
+              "gameName": "H_Combat01",
+              "state": {
+                "kind": "fieldsCombat",
+                "cages": {
+                  "cage1": {
+                    "offer": {
+                      "rewardType": "MaxManaDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage2": {
+                    "offer": {
+                      "rewardType": "RoomMoneyDrop"
+                    },
+                    "traitOffersByAcquisitionRole": {},
+                    "dispositionByAcquisitionRole": {
+                      "self": {
+                        "kind": "normal"
+                      }
+                    }
+                  },
+                  "cage3": null
+                },
+                "optionalRewardCount": 2,
+                "optionalRewards": {
+                  "optional1": null,
+                  "optional2": null,
+                  "optional3": null,
+                  "optional4": null
+                },
+                "spatial": {
+                  "entryStartPointId": null,
+                  "cagePointIdBySlot": {
+                    "cage1": null,
+                    "cage2": null,
+                    "cage3": null
+                  },
+                  "optionalPointIdBySlot": {
+                    "optional1": null,
+                    "optional2": null,
+                    "optional3": null,
+                    "optional4": null
+                  },
+                  "nemesisPointId": null
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Passive": "GeneratedH_Passive",
+                  "Cage01": "GeneratedH",
+                  "Cage02": "GeneratedH",
+                  "Cage03": "GeneratedH"
+                },
+                "figLeafSkipByPhase": {
+                  "Passive": false,
+                  "Cage01": false,
+                  "Cage02": false,
+                  "Cage03": false
+                },
+                "gorgonResultByPhase": {
+                  "Passive": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage01": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage02": {
+                    "athenaTriggerConditionMet": false
+                  },
+                  "Cage03": {
+                    "athenaTriggerConditionMet": false
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "2ae527a9-b84c-46c2-8329-04e69248c091",
+              "gameName": "H_MiniBoss01",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "ApolloUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": null
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6",
+              "gameName": "H_PreBoss01",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "WorldShop",
+                  "offers": {
+                    "Boon": {
+                      "optionKey": "RandomLoot",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "RandomLoot",
+                          "payload": {
+                            "kind": "BoonSource",
+                            "source": "ApolloUpgrade"
+                          }
+                        },
+                        "traitOffersByAcquisitionRole": {
+                          "source": null
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "source": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MajorNonBoon": {
+                      "optionKey": "ArmorBoost",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "ArmorBoost"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Minor": {
+                      "optionKey": "StackUpgrade",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StackUpgrade"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "choice",
+                            "offeredTraitKeys": [
+                              "HeraManaBoon",
+                              "ApolloWeaponBoon",
+                              "HeraCastBoon"
+                            ],
+                            "selectedTraitKey": "ApolloWeaponBoon"
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "infernalContractReward": {
+                      "optionKey": null,
+                      "reward": null
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6:boss",
+              "gameName": "H_Boss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "customizationByPhase": {
+                  "Encounter": {
+                    "burrow": {
+                      "kind": "single",
+                      "choiceKey": "lycaons"
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "collectRequiredReward"
+                  }
+                ]
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6:postboss",
+              "gameName": "H_PostBoss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "useFountain"
+                  },
+                  {
+                    "kind": "interactKeepsakeRack"
+                  }
+                ]
+              },
+              "stygianWell": {
+                "interacted": false,
+                "offerKeyBySlot": {
+                  "healing": null,
+                  "secondLeft": null,
+                  "secondRight": null
+                }
+              },
+              "purgingPool": {
+                "interacted": false,
+                "traitKeyBySlot": {
+                  "left": null,
+                  "middle": null,
+                  "right": null
+                }
+              },
+              "keepsakeRack": {
+                "keepsakeKey": "LowHealthCritKeepsake"
+              },
+              "additionalExits": []
+            }
+          ],
+          "decisions": [
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "H:start"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": {
+                  "cageOutcome": "min"
+                },
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "fe278941-5986-4de9-9e75-b281be0cc589"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "fe278941-5986-4de9-9e75-b281be0cc589"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": {
+                  "cageOutcome": "max"
+                },
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "f51432fc-5c63-4686-99aa-4bcbcee5983b"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "2a438f57-be1e-4167-b56f-720073ddb3aa"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "f51432fc-5c63-4686-99aa-4bcbcee5983b"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": {
+                  "cageOutcome": "max"
+                },
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "decfa386-8281-4efe-86fd-51ce3ede2490"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "2ae527a9-b84c-46c2-8329-04e69248c091"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "decfa386-8281-4efe-86fd-51ce3ede2490"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": {
+                  "cageOutcome": "min"
+                },
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "fc60cb21-5678-4c1f-996c-ad7b14132a48"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "c7919e0c-0541-4495-84c5-1ef098a909a4"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "fc60cb21-5678-4c1f-996c-ad7b14132a48"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            }
+          ],
+          "fixedRoomLinks": [
+            {
+              "sourceOccurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6",
+              "targetOccurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6:boss"
+            },
+            {
+              "sourceOccurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6:boss",
+              "targetOccurrenceId": "c757b08f-7d58-46d4-967c-541b5d19a3a6:postboss"
+            }
+          ]
+        }
+      },
+      {
+        "biomeKey": "I",
+        "state": {
+          "maxNonGoalRewards": 3
+        },
+        "topology": {
+          "startOccurrenceId": "I:start",
+          "occurrences": [
+            {
+              "occurrenceId": "I:start",
+              "gameName": "I_Intro",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {},
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "f69d5ce4-ca8b-4463-99e5-4a673a62f7a5",
+              "gameName": "I_Combat20",
+              "state": {
+                "kind": "counted",
+                "reward": null
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedI_Small"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": true
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 2,
+                      "highlightKey": "GoldElemental",
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": []
+                        },
+                        {
+                          "waveIndex": 2,
+                          "typeKeys": [
+                            "TimeElemental"
+                          ],
+                          "allocations": {
+                            "GoldElemental": 113.6875
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "fc2a2eaf-795e-43b2-a55e-b7ba45b70647",
+              "gameName": "I_Combat24",
+              "state": {
+                "kind": "counted",
+                "reward": null
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedI"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "ClockworkHeavyMelee_Elite",
+                            "SatyrRatCatcher_Elite"
+                          ],
+                          "allocations": {
+                            "ClockworkHeavyMelee_Elite": 300
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "24987204-b9a9-416e-8446-a1e1d4784681",
+              "gameName": "I_Combat06",
+              "state": {
+                "kind": "counted",
+                "reward": null
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedI"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "ClockworkHeavyMelee_Elite",
+                            "SatyrRatCatcher_Elite"
+                          ],
+                          "allocations": {
+                            "ClockworkHeavyMelee_Elite": 335
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "5bff20a3-f39c-4904-8220-b38c177bad6d",
+              "gameName": "I_Combat15",
+              "state": {
+                "kind": "counted",
+                "reward": null
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedI"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "ClockworkHeavyMelee_Elite",
+                            "SatyrRatCatcher_Elite"
+                          ],
+                          "allocations": {
+                            "ClockworkHeavyMelee_Elite": 387.5
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "862044e3-f305-40c2-b6ff-563b5ef8ab89",
+              "gameName": "I_Combat16",
+              "state": {
+                "kind": "counted",
+                "reward": null
+              },
+              "encounters": {
+                "encounterKeyByPhase": {
+                  "Encounter": "GeneratedI"
+                },
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {
+                  "Encounter": {
+                    "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 1,
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": [
+                            "ClockworkHeavyMelee_Elite",
+                            "SatyrRatCatcher_Elite"
+                          ],
+                          "allocations": {
+                            "ClockworkHeavyMelee_Elite": 440
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "a45cc038-7f33-4e55-9a6f-e3bedfdb0b7d",
+              "gameName": "I_MiniBoss01",
+              "state": {
+                "kind": "counted",
+                "reward": {
+                  "offer": {
+                    "rewardType": "Boon",
+                    "payload": {
+                      "kind": "BoonSource",
+                      "source": "ApolloUpgrade"
+                    }
+                  },
+                  "traitOffersByAcquisitionRole": {
+                    "source": null
+                  },
+                  "dispositionByAcquisitionRole": {
+                    "source": {
+                      "kind": "normal"
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": []
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "6e611afd-464a-44e5-b5a4-94360d2ee153",
+              "gameName": "I_PreBoss02",
+              "state": {
+                "kind": "shop",
+                "shop": {
+                  "profileKey": "I_WorldShop",
+                  "offers": {
+                    "BoostedBoon": {
+                      "optionKey": "StackUpgradeBig",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StackUpgradeBig"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "choice",
+                            "offeredTraitKeys": [
+                              "HeraManaBoon",
+                              "ApolloWeaponBoon",
+                              "HeraCastBoon"
+                            ],
+                            "selectedTraitKey": "ApolloWeaponBoon"
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MixedProgress": {
+                      "optionKey": "StackUpgrade",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "StackUpgrade"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "levelResolutionsByAcquisitionRole": {
+                          "self": {
+                            "kind": "choice",
+                            "offeredTraitKeys": [],
+                            "selectedTraitKey": null
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "Survival": {
+                      "optionKey": "ArmorBigBoost",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "ArmorBigBoost"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "PremiumProgress": {
+                      "optionKey": "ChaosWeaponUpgrade",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "ChaosWeaponUpgrade"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "anvilResultsByAcquisitionRole": {
+                          "self": {
+                            "kind": "anvilOfFates",
+                            "removedTraitKey": "LobAmmoTrait",
+                            "addedTraitKeys": [
+                              "LobSpreadShotTrait",
+                              "LobOneSideTrait"
+                            ]
+                          }
+                        },
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "MetaProgress": {
+                      "optionKey": "WeaponPointsRareDrop",
+                      "reward": {
+                        "offer": {
+                          "rewardType": "WeaponPointsRareDrop"
+                        },
+                        "traitOffersByAcquisitionRole": {},
+                        "dispositionByAcquisitionRole": {
+                          "self": {
+                            "kind": "normal"
+                          }
+                        }
+                      }
+                    },
+                    "infernalContractReward": {
+                      "optionKey": null,
+                      "reward": null
+                    }
+                  }
+                }
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {}
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "interactShopOffer",
+                    "offerKey": "PremiumProgress"
+                  }
+                ]
+              },
+              "acquisitionSites": {
+                "roomExit": {}
+              },
+              "additionalExits": []
+            },
+            {
+              "occurrenceId": "6e611afd-464a-44e5-b5a4-94360d2ee153:boss",
+              "gameName": "I_Boss01",
+              "state": {
+                "kind": "none"
+              },
+              "encounters": {
+                "encounterKeyByPhase": {},
+                "figLeafSkipByPhase": {
+                  "Encounter": false
+                },
+                "gorgonResultByPhase": {},
+                "customizationByPhase": {
+                  "Encounter": {
+                    "lateSummon": {
+                      "kind": "single",
+                      "choiceKey": "goldwraiths"
+                    }
+                  }
+                }
+              },
+              "roomActions": {
+                "order": [
+                  {
+                    "kind": "collectRequiredReward"
+                  }
+                ]
+              },
+              "additionalExits": []
+            }
+          ],
+          "decisions": [
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "I:start"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "f69d5ce4-ca8b-4463-99e5-4a673a62f7a5"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "f69d5ce4-ca8b-4463-99e5-4a673a62f7a5"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "fc2a2eaf-795e-43b2-a55e-b7ba45b70647"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "fc2a2eaf-795e-43b2-a55e-b7ba45b70647"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "24987204-b9a9-416e-8446-a1e1d4784681"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "24987204-b9a9-416e-8446-a1e1d4784681"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "5bff20a3-f39c-4904-8220-b38c177bad6d"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "5bff20a3-f39c-4904-8220-b38c177bad6d"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "862044e3-f305-40c2-b6ff-563b5ef8ab89"
+                  },
+                  {
+                    "exitKey": "exit2",
+                    "occurrenceId": "a45cc038-7f33-4e55-9a6f-e3bedfdb0b7d"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "normal",
+                "exitKey": "exit1"
+              }
+            },
+            {
+              "kind": "exit",
+              "source": {
+                "kind": "occurrence",
+                "occurrenceId": "862044e3-f305-40c2-b6ff-563b5ef8ab89"
+              },
+              "normal": {
+                "kind": "batch",
+                "rewardStore": {
+                  "kind": "none"
+                },
+                "batchState": null,
+                "targets": [
+                  {
+                    "exitKey": "exit1",
+                    "occurrenceId": "6e611afd-464a-44e5-b5a4-94360d2ee153"
+                  }
+                ]
+              },
+              "selection": {
+                "kind": "derived"
+              }
+            }
+          ],
+          "fixedRoomLinks": [
+            {
+              "sourceOccurrenceId": "6e611afd-464a-44e5-b5a4-94360d2ee153",
+              "targetOccurrenceId": "6e611afd-464a-44e5-b5a4-94360d2ee153:boss"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
