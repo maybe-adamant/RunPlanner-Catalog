@@ -1,3 +1,7 @@
 {
-  "categories": [{ "id": "speedrun", "label": "Speedrun" }]
+  "categories": [
+    { "id": "perfectrun", "label": "Perfect Run" },
+    { "id": "replicas", "label": "Replicas" }
+  ]
 }
+
