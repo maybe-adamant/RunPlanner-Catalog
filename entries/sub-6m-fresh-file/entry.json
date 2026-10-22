@@ -1,14 +1,13 @@
 {
   "title": "Sub 6m Fresh File",
-  "description": "First-save run on Apollo, Hestia, Aphrodite and Poseidon.",
+  "description": "Fresh file run on Apollo, Hestia, Aphrodite and Poseidon.",
   "category": "speedrun",
   "tags": [
-    "fresh-file",
     "staff",
     "apollo",
     "hestia",
     "aphrodite",
     "poseidon"
   ],
-  "author": "Hippo"
+  "author": "Dr Oméga"
 }
