@@ -215,3 +215,15 @@ jobs:
             gh release upload catalog "${plans[@]}" --clobber
           fi
           gh release upload catalog out/catalog.json out/catalog.json.sig --clobber
+          # Only after the new index is up: plans it no longer names leave the release. Users'
+          # library copies are their own files and are never affected.
+          gh release view catalog --json assets --jq '.assets[].name' |
+            while IFS= read -r asset; do
+              case "${asset}" in
+                *.runplanner.json)
+                  if [ ! -f "out/${asset}" ]; then
+                    gh release delete-asset catalog "${asset}" --yes
+                  fi
+                  ;;
+              esac
+            done
