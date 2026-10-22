@@ -1,7 +1,13 @@
 {
   "title": "Underworld WR",
-  "description": "Argent Skull, Aspect of Medea from Erebus to Tartarus, opening on Zeus with Cloud Bangle and built on Hera and Poseidon.",
+  "description": "Replica of the world-record run: Medea Skull opening on Zeus with Cloud Bangle, built on Hera and Poseidon.",
   "category": "speedrun",
-  "tags": ["skull", "medea", "zeus", "hera", "poseidon"],
-  "author": "maybe-adamant"
+  "tags": [
+    "skull",
+    "medea",
+    "zeus",
+    "hera",
+    "poseidon"
+  ],
+  "author": "Hippo"
 }

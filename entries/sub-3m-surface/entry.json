@@ -1,7 +1,13 @@
 {
   "title": "Sub 3m Surface",
-  "description": "Argent Skull, Aspect of Persephone from Ephyra to the Summit, opening on Apollo and built on Hera with Jeweled Pom.",
+  "description": "Persephone Skull opening on Apollo, built on Hera with Jeweled Pom.",
   "category": "speedrun",
-  "tags": ["skull", "persephone", "apollo", "hera", "poseidon"],
+  "tags": [
+    "skull",
+    "persephone",
+    "apollo",
+    "hera",
+    "poseidon"
+  ],
   "author": "Hippo"
 }

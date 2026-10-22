@@ -1,7 +1,12 @@
 {
   "title": "Sub 2m Underworld",
-  "description": "Argent Skull, Aspect of Persephone from Erebus to Tartarus, built on Apollo and Hera with an Experimental Hammer start.",
+  "description": "Persephone Skull on Apollo and Hera, with an Experimental Hammer start.",
   "category": "speedrun",
-  "tags": ["skull", "persephone", "apollo", "hera"],
-  "author": "maybe-adamant"
+  "tags": [
+    "skull",
+    "persephone",
+    "apollo",
+    "hera"
+  ],
+  "author": "Hippo"
 }
