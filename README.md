@@ -11,7 +11,7 @@ catalog public key built into the app, and downloads an entry's plan only when a
 ## Layout
 
 ```text
-categories.json              # the fixed set of categories an entry can belong to
+categories.json              # the categories an entry can belong to, in display order
 entries/
   <slug>/
     entry.json               # title, description, category, tags, author

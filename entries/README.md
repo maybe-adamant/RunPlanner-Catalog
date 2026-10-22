@@ -36,7 +36,7 @@
 ## Categories
 
 `categories.json` is the only list of categories. Adding or renaming one is an owner change, made
-in its own pull request; the planner shows the categories in the order listed.
+in its own pull request, usually together with its first entry; the planner shows the categories in the order listed and hides any without entries.
 
 ## What players receive
 
