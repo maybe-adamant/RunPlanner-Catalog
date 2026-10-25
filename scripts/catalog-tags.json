@@ -1,0 +1,668 @@
+{
+  "catalogVersion": "0.55.0-anvil-of-fates",
+  "weapons": {
+    "WeaponAxe": {
+      "tag": "axe",
+      "name": "Axe"
+    },
+    "WeaponDagger": {
+      "tag": "blades",
+      "name": "Blades"
+    },
+    "WeaponLob": {
+      "tag": "skull",
+      "name": "Skull"
+    },
+    "WeaponStaffSwing": {
+      "tag": "staff",
+      "name": "Staff"
+    },
+    "WeaponSuit": {
+      "tag": "coat",
+      "name": "Coat"
+    },
+    "WeaponTorch": {
+      "tag": "flames",
+      "name": "Flames"
+    }
+  },
+  "aspects": {
+    "AxeArmCastAspect": {
+      "tag": "charon",
+      "name": "Charon"
+    },
+    "AxePerfectCriticalAspect": {
+      "tag": "thanatos",
+      "name": "Thanatos"
+    },
+    "AxeRallyAspect": {
+      "tag": "nergal",
+      "name": "Nergal"
+    },
+    "AxeRecoveryAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "BaseStaffAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "BaseSuitAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "DaggerBackstabAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "DaggerBlockAspect": {
+      "tag": "artemis",
+      "name": "Artemis"
+    },
+    "DaggerHomingThrowAspect": {
+      "tag": "pan",
+      "name": "Pan"
+    },
+    "DaggerTripleAspect": {
+      "tag": "morrigan",
+      "name": "Morrigan"
+    },
+    "LobAmmoBoostAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "LobCloseAttackAspect": {
+      "tag": "medea",
+      "name": "Medea"
+    },
+    "LobGunAspect": {
+      "tag": "hel",
+      "name": "Hel"
+    },
+    "LobImpulseAspect": {
+      "tag": "persephone",
+      "name": "Persephone"
+    },
+    "StaffClearCastAspect": {
+      "tag": "circe",
+      "name": "Circe"
+    },
+    "StaffRaiseDeadAspect": {
+      "tag": "anubis",
+      "name": "Anubis"
+    },
+    "StaffSelfHitAspect": {
+      "tag": "momus",
+      "name": "Momus"
+    },
+    "SuitComboAspect": {
+      "tag": "shiva",
+      "name": "Shiva"
+    },
+    "SuitHexAspect": {
+      "tag": "selene",
+      "name": "Selene"
+    },
+    "SuitMarkCritAspect": {
+      "tag": "nyx",
+      "name": "Nyx"
+    },
+    "TorchAutofireAspect": {
+      "tag": "supay",
+      "name": "Supay"
+    },
+    "TorchDetonateAspect": {
+      "tag": "moros",
+      "name": "Moros"
+    },
+    "TorchSpecialDurationAspect": {
+      "tag": "mel",
+      "name": "Melinoë"
+    },
+    "TorchSprintRecallAspect": {
+      "tag": "eos",
+      "name": "Eos"
+    }
+  },
+  "boons": {
+    "AllCloseBoon": [
+      "aphrodite",
+      "poseidon"
+    ],
+    "AllElementalBoon": [
+      "hera"
+    ],
+    "AloneDamageBoon": [
+      "hestia"
+    ],
+    "AmplifyConeBoon": [
+      "poseidon"
+    ],
+    "AntiArmorBoon": [
+      "hephaestus"
+    ],
+    "AphroditeCastBoon": [
+      "aphrodite"
+    ],
+    "AphroditeManaBoon": [
+      "aphrodite"
+    ],
+    "AphroditeSpecialBoon": [
+      "aphrodite"
+    ],
+    "AphroditeSprintBoon": [
+      "aphrodite"
+    ],
+    "AphroditeWeaponBoon": [
+      "aphrodite"
+    ],
+    "ApolloBlindBoon": [
+      "apollo"
+    ],
+    "ApolloCastAreaBoon": [
+      "apollo"
+    ],
+    "ApolloCastBoon": [
+      "apollo"
+    ],
+    "ApolloExCastBoon": [
+      "apollo"
+    ],
+    "ApolloManaBoon": [
+      "apollo"
+    ],
+    "ApolloRetaliateBoon": [
+      "apollo"
+    ],
+    "ApolloSecondStageCastBoon": [
+      "apollo",
+      "zeus"
+    ],
+    "ApolloSpecialBoon": [
+      "apollo"
+    ],
+    "ApolloSprintBoon": [
+      "apollo"
+    ],
+    "ApolloWeaponBoon": [
+      "apollo"
+    ],
+    "AresCastBoon": [
+      "ares"
+    ],
+    "AresExCastBoon": [
+      "ares"
+    ],
+    "AresManaBoon": [
+      "ares"
+    ],
+    "AresSpecialBoon": [
+      "ares"
+    ],
+    "AresSprintBoon": [
+      "ares"
+    ],
+    "AresStatusDoubleDamageBoon": [
+      "ares"
+    ],
+    "AresWeaponBoon": [
+      "ares"
+    ],
+    "ArmorBoon": [
+      "hephaestus"
+    ],
+    "AutoRevengeBoon": [
+      "ares",
+      "zeus"
+    ],
+    "BlindChanceBoon": [
+      "apollo"
+    ],
+    "BlindClearBoon": [
+      "apollo",
+      "hephaestus"
+    ],
+    "BloodDropRevengeBoon": [
+      "ares"
+    ],
+    "BloodManaBurstBoon": [
+      "aphrodite",
+      "ares"
+    ],
+    "BloodRetentionBoon": [
+      "ares",
+      "hera"
+    ],
+    "BoltRetaliateBoon": [
+      "zeus"
+    ],
+    "BoonDecayBoon": [
+      "hera"
+    ],
+    "BoonGrowthBoon": [
+      "demeter"
+    ],
+    "BurnArmorBoon": [
+      "hestia"
+    ],
+    "BurnConsumeBoon": [
+      "demeter",
+      "hestia"
+    ],
+    "BurnExplodeBoon": [
+      "hestia"
+    ],
+    "BurnRefreshBoon": [
+      "aphrodite",
+      "hestia"
+    ],
+    "BurnSprintBoon": [
+      "hestia"
+    ],
+    "BurnStackBoon": [
+      "hestia"
+    ],
+    "CastAnywhereBoon": [
+      "zeus"
+    ],
+    "CastAttachBoon": [
+      "demeter"
+    ],
+    "CastNovaBoon": [
+      "demeter"
+    ],
+    "CastProjectileBoon": [
+      "hestia"
+    ],
+    "CharmCrowdBoon": [
+      "aphrodite",
+      "hera"
+    ],
+    "ClearRootBoon": [
+      "demeter",
+      "hephaestus"
+    ],
+    "CommonGlobalDamageBoon": [
+      "hera"
+    ],
+    "CoverRegenerationBoon": [
+      "apollo",
+      "hestia"
+    ],
+    "DamageSharePotencyBoon": [
+      "hera"
+    ],
+    "DamageShareRetaliateBoon": [
+      "hera"
+    ],
+    "DemeterCastBoon": [
+      "demeter"
+    ],
+    "DemeterManaBoon": [
+      "demeter"
+    ],
+    "DemeterSpecialBoon": [
+      "demeter"
+    ],
+    "DemeterSprintBoon": [
+      "demeter"
+    ],
+    "DemeterWeaponBoon": [
+      "demeter"
+    ],
+    "DoorHealToFullBoon": [
+      "aphrodite"
+    ],
+    "DoubleBloodDropBoon": [
+      "ares"
+    ],
+    "DoubleBoltBoon": [
+      "zeus"
+    ],
+    "DoubleExManaBoon": [
+      "apollo"
+    ],
+    "DoubleMassiveAttackBoon": [
+      "hephaestus",
+      "hestia"
+    ],
+    "DoubleRewardBoon": [
+      "poseidon"
+    ],
+    "DoubleSplashBoon": [
+      "ares",
+      "poseidon"
+    ],
+    "DoubleStrikeChanceBoon": [
+      "apollo"
+    ],
+    "DoubleSwordBoon": [
+      "apollo",
+      "ares"
+    ],
+    "EchoBurnBoon": [
+      "hestia",
+      "zeus"
+    ],
+    "EchoExpirationBoon": [
+      "zeus"
+    ],
+    "ElementalBaseDamageBoon": [
+      "hestia"
+    ],
+    "ElementalDamageBoon": [
+      "hephaestus"
+    ],
+    "ElementalDamageCapBoon": [
+      "demeter"
+    ],
+    "ElementalDamageFloorBoon": [
+      "zeus"
+    ],
+    "ElementalDodgeBoon": [
+      "aphrodite"
+    ],
+    "ElementalHealthBoon": [
+      "poseidon"
+    ],
+    "ElementalOlympianDamageBoon": [
+      "ares"
+    ],
+    "ElementalRallyBoon": [
+      "apollo"
+    ],
+    "ElementalRarityUpgradeBoon": [
+      "hera"
+    ],
+    "EncounterStartDefenseBuffBoon": [
+      "hephaestus"
+    ],
+    "EncounterStartOffenseBuffBoon": [
+      "poseidon"
+    ],
+    "FireballManaSpecialBoon": [
+      "hestia"
+    ],
+    "FireballRendBoon": [
+      "ares",
+      "hestia"
+    ],
+    "FocusDamageShaveBoon": [
+      "poseidon"
+    ],
+    "FocusLightningBoon": [
+      "zeus"
+    ],
+    "FocusRawDamageBoon": [
+      "aphrodite"
+    ],
+    "GoodStuffBoon": [
+      "demeter",
+      "poseidon"
+    ],
+    "HealthRewardBonusBoon": [
+      "aphrodite"
+    ],
+    "HeavyArmorBoon": [
+      "hephaestus"
+    ],
+    "HephaestusCastBoon": [
+      "hephaestus"
+    ],
+    "HephaestusManaBoon": [
+      "hephaestus"
+    ],
+    "HephaestusSpecialBoon": [
+      "hephaestus"
+    ],
+    "HephaestusSprintBoon": [
+      "hephaestus"
+    ],
+    "HephaestusWeaponBoon": [
+      "hephaestus"
+    ],
+    "HeraCastBoon": [
+      "hera"
+    ],
+    "HeraManaBoon": [
+      "hera"
+    ],
+    "HeraSpecialBoon": [
+      "hera"
+    ],
+    "HeraSprintBoon": [
+      "hera"
+    ],
+    "HeraWeaponBoon": [
+      "hera"
+    ],
+    "HestiaCastBoon": [
+      "hestia"
+    ],
+    "HestiaManaBoon": [
+      "hestia"
+    ],
+    "HestiaSpecialBoon": [
+      "hestia"
+    ],
+    "HestiaSprintBoon": [
+      "hestia"
+    ],
+    "HestiaWeaponBoon": [
+      "hestia"
+    ],
+    "HighHealthOffenseBoon": [
+      "aphrodite"
+    ],
+    "InstantRootKill": [
+      "demeter"
+    ],
+    "KeepsakeLevelBoon": [
+      "demeter",
+      "hera"
+    ],
+    "LightningDebuffGeneratorBoon": [
+      "zeus"
+    ],
+    "LightningVulnerabilityBoon": [
+      "poseidon",
+      "zeus"
+    ],
+    "LinkedDeathDamageBoon": [
+      "hera"
+    ],
+    "LowHealthLifestealBoon": [
+      "ares"
+    ],
+    "ManaBurstBoon": [
+      "aphrodite"
+    ],
+    "ManaBurstCountBoon": [
+      "aphrodite",
+      "apollo"
+    ],
+    "ManaRestoreDamageBoon": [
+      "hera",
+      "hestia"
+    ],
+    "ManaShieldBoon": [
+      "hephaestus",
+      "hera"
+    ],
+    "ManaToHealthBoon": [
+      "hephaestus"
+    ],
+    "MassiveCastBoon": [
+      "hephaestus",
+      "poseidon"
+    ],
+    "MassiveDamageBoon": [
+      "hephaestus"
+    ],
+    "MassiveKnockupBoon": [
+      "hephaestus"
+    ],
+    "MaxHealthDamageBoon": [
+      "aphrodite",
+      "demeter"
+    ],
+    "MissingHealthCritBoon": [
+      "ares"
+    ],
+    "MoneyDamageBoon": [
+      "hera",
+      "poseidon"
+    ],
+    "OmegaDelayedDamageBoon": [
+      "ares"
+    ],
+    "OmegaHeraProjectileBoon": [
+      "hera"
+    ],
+    "OmegaPoseidonProjectileBoon": [
+      "poseidon"
+    ],
+    "OmegaZeroBurnBoon": [
+      "hestia"
+    ],
+    "PerfectDamageBonusBoon": [
+      "apollo"
+    ],
+    "PlantHealthBoon": [
+      "demeter"
+    ],
+    "PoseidonCastBoon": [
+      "poseidon"
+    ],
+    "PoseidonExCastBoon": [
+      "poseidon"
+    ],
+    "PoseidonManaBoon": [
+      "poseidon"
+    ],
+    "PoseidonSpecialBoon": [
+      "poseidon"
+    ],
+    "PoseidonSplashSprintBoon": [
+      "apollo",
+      "poseidon"
+    ],
+    "PoseidonSprintBoon": [
+      "poseidon"
+    ],
+    "PoseidonStatusBoon": [
+      "poseidon"
+    ],
+    "PoseidonWeaponBoon": [
+      "poseidon"
+    ],
+    "RaiseDeadBoon": [
+      "apollo",
+      "hera"
+    ],
+    "RandomStatusBoon": [
+      "aphrodite"
+    ],
+    "RapidSwordBoon": [
+      "ares",
+      "hephaestus"
+    ],
+    "ReboundingSparkBoon": [
+      "hephaestus",
+      "zeus"
+    ],
+    "RendBloodDropBoon": [
+      "ares"
+    ],
+    "ReserveManaHitShieldBoon": [
+      "demeter"
+    ],
+    "RoomRewardBonusBoon": [
+      "poseidon"
+    ],
+    "RootDurationBoon": [
+      "demeter"
+    ],
+    "RootStrikeBoon": [
+      "demeter",
+      "zeus"
+    ],
+    "SelfCastBoon": [
+      "ares",
+      "demeter"
+    ],
+    "SlamManaBurstBoon": [
+      "aphrodite",
+      "hephaestus"
+    ],
+    "SlowExAttackBoon": [
+      "demeter"
+    ],
+    "SpawnCastDamageBoon": [
+      "hera"
+    ],
+    "SpawnKillBoon": [
+      "zeus"
+    ],
+    "SprintEchoBoon": [
+      "aphrodite",
+      "zeus"
+    ],
+    "SteamBoon": [
+      "hestia",
+      "poseidon"
+    ],
+    "StormSpawnBoon": [
+      "apollo",
+      "demeter"
+    ],
+    "SuperSacrificeBoonHera": [
+      "hera"
+    ],
+    "SuperSacrificeBoonZeus": [
+      "zeus"
+    ],
+    "WeakPotencyBoon": [
+      "aphrodite"
+    ],
+    "WeakVulnerabilityBoon": [
+      "aphrodite"
+    ],
+    "WeaponUpgradeBoon": [
+      "hephaestus"
+    ],
+    "ZeusCastBoon": [
+      "zeus"
+    ],
+    "ZeusManaBoltBoon": [
+      "zeus"
+    ],
+    "ZeusManaBoon": [
+      "zeus"
+    ],
+    "ZeusSpecialBoon": [
+      "zeus"
+    ],
+    "ZeusSprintBoon": [
+      "zeus"
+    ],
+    "ZeusWeaponBoon": [
+      "zeus"
+    ]
+  },
+  "routes": {
+    "Dream": {
+      "label": "Dream Dive"
+    },
+    "FreshFile": {
+      "label": "Fresh File",
+      "fixedWeaponKey": "WeaponStaffSwing"
+    },
+    "Surface": {
+      "label": "Surface"
+    },
+    "Underworld": {
+      "label": "Underworld"
+    }
+  }
+}

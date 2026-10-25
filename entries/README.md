@@ -33,6 +33,21 @@
    release. The owner reviews the plan and its metadata; once merged, the publish workflow
    builds, signs and publishes the index.
 
+## Import a folder of plans
+
+On Windows, `scripts/catalog-import.cmd` turns a folder of saved plans into entry folders:
+
+1. Download the `scripts` folder (or the whole repository).
+2. Drag your plans folder onto `catalog-import.cmd`, or double-click it and answer the
+   questions: the plans folder, a category and your name.
+3. Check each new `entry.json`; the title comes from the file name and the tags and description
+   from the plan, so edit them as you like. Copies of the same plan are added once.
+4. On GitHub, open `entries`, choose **Add file → Upload files**, drag the new folders in and
+   propose the change; or commit them in your checkout and open a pull request.
+
+Run inside a checkout, it writes into `entries`; otherwise into a `catalog-entries` folder next
+to your plans folder.
+
 ## Categories
 
 `categories.json` is the only list of categories. Adding or renaming one is an owner change, made
