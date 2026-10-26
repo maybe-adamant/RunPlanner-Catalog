@@ -1,8 +1,8 @@
 {
   "categories": [
+    { "id": "bracket2026-v1", "label": "Bracket2026" },
     { "id": "perfectrun", "label": "Perfect Run" },
-    { "id": "replicas", "label": "Replicas" },
-    { "id": "bracket2026-v1", "label": "Bracket2026" }
+    { "id": "replicas", "label": "Replicas" }
   ]
 }
 
