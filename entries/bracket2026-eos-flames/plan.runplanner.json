@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-34e0a987-59c4-4ff9-a50e-4307becf9767",
+  "projectId": "run-plan-92ea7db6-ba02-4f31-8dec-9ec90c7b6ed9",
   "name": "Eos Flames",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -99,24 +99,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "AresSpecialBoon",
-        "CastDamageCostume",
-        "NarcissusC",
-        "EchoDoubleLevelBoon",
-        "OmegaDelayedDamageBoon",
-        "HephaestusCastBoon",
-        "HeavyArmorBoon",
-        "ApolloSprintBoon",
-        "ElementalDamageBoon",
-        "EncounterStartDefenseBuffBoon",
-        "DemeterWeaponBoon",
-        "ApolloManaBoon",
-        "ApolloRetaliateBoon",
-        "HermesSpecialBoon",
-        "TorchOrbitPointTrait",
-        "TorchDiscountExAttackTrait"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -4365,10 +4348,10 @@
                       }
                     },
                     "Survival": {
-                      "optionKey": "LastStandDrop",
+                      "optionKey": "ArmorBigBoost",
                       "reward": {
                         "offer": {
-                          "rewardType": "LastStandDrop"
+                          "rewardType": "ArmorBigBoost"
                         },
                         "traitOffersByAcquisitionRole": {},
                         "dispositionByAcquisitionRole": {

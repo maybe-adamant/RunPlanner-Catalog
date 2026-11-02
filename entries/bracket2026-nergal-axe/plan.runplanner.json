@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-8215194c-e2d5-4d1f-bed1-8f7ebbfdfa6e",
+  "projectId": "run-plan-5f4715c2-5eda-4ebf-9dff-13dbaf97102f",
   "name": "Nergal Axe",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -104,24 +104,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "HermesWeaponBoon",
-        "AphroditeWeaponBoon",
-        "CritBonusBoon",
-        "AxeRangedWhirlwindTrait",
-        "AphroditeCastBoon",
-        "HeraSprintBoon",
-        "AphroditeManaBoon",
-        "WeakVulnerabilityBoon",
-        "EncounterStartOffenseBuffBoon",
-        "FocusRawDamageBoon",
-        "NarcissusC",
-        "LuckyBoon",
-        "AxeFreeSpinTrait",
-        "OmegaHeraProjectileBoon",
-        "InvulnerabilityDashBoon",
-        "PerfectDamageBonusBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -4467,10 +4450,10 @@
                       }
                     },
                     "Survival": {
-                      "optionKey": "LastStandDrop",
+                      "optionKey": "ArmorBigBoost",
                       "reward": {
                         "offer": {
-                          "rewardType": "LastStandDrop"
+                          "rewardType": "ArmorBigBoost"
                         },
                         "traitOffersByAcquisitionRole": {},
                         "dispositionByAcquisitionRole": {

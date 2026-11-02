@@ -1,7 +1,8 @@
 {
   "schemaVersion": 98,
-  "projectId": "run-plan-e8fddc9c-b170-4707-abcf-1983ca57ae5b",
-  "name": "Event08BladesMorrigan",
+  "schemaRevision": 1,
+  "projectId": "run-plan-8537eb75-7906-4d66-8cee-5d099eb154ff",
+  "name": "Morrigan Blades",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -68,7 +69,7 @@
       },
       "keepsakeEquipResults": {
         "jeweledPom": {
-          "traitKey": "HadesDeathDefianceDamageBoon"
+          "traitKey": "HadesDashSweepBoon"
         }
       }
     },
@@ -85,24 +86,7 @@
         "H": "Echo"
       },
       "fieldNpcsByBiome": {},
-      "basketTraitKeys": [
-        "ZeusCastBoon",
-        "ApolloWeaponBoon",
-        "AresSpecialBoon",
-        "AresManaBoon",
-        "AresStatusDoubleDamageBoon",
-        "ManaBurstBoon",
-        "FocusRawDamageBoon",
-        "ApolloSprintBoon",
-        "DoubleBloodDropBoon",
-        "MoneyMultiplierBoon",
-        "RestockBoon",
-        "DaggerRapidAttackTrait",
-        "DaggerBlinkAoETrait",
-        "IncomeCostume",
-        "NarcissusD",
-        "DiminishingHealthAndManaBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TimedBuffKeepsake",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-a53038cc-0421-43e4-b926-32bb9398f404",
+  "projectId": "run-plan-c5137b9a-b6e1-42e5-8cfc-f684ead56796",
   "name": "Supay Flames",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -97,25 +97,7 @@
         "H": "Echo"
       },
       "fieldNpcsByBiome": {},
-      "basketTraitKeys": [
-        "SprintShieldBoon",
-        "PoseidonSpecialBoon",
-        "PoseidonStatusBoon",
-        "HephaestusWeaponBoon",
-        "MassiveCastBoon",
-        "PoseidonSprintBoon",
-        "ZeusCastBoon",
-        "AphroditeManaBoon",
-        "HighHealthOffenseBoon",
-        "WeakVulnerabilityBoon",
-        "MassiveKnockupBoon",
-        "LuckyBoon",
-        "AmplifyConeBoon",
-        "ManaBurstBoon",
-        "TorchExSpecialCountTrait",
-        "TorchSpecialLineTrait",
-        "DiminishingDodgeBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TimedBuffKeepsake",
@@ -4479,10 +4461,10 @@
                       }
                     },
                     "Survival": {
-                      "optionKey": "LastStandDrop",
+                      "optionKey": "ArmorBigBoost",
                       "reward": {
                         "offer": {
-                          "rewardType": "LastStandDrop"
+                          "rewardType": "ArmorBigBoost"
                         },
                         "traitOffersByAcquisitionRole": {},
                         "dispositionByAcquisitionRole": {

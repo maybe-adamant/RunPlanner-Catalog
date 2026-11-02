@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-f4ffea2e-8153-47de-8a22-b98ac0211beb",
+  "projectId": "run-plan-e85ceae4-e366-4b8f-9259-c960fcac123b",
   "name": "Mel Axe",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -104,26 +104,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "HermesWeaponBoon",
-        "ZeusCastBoon",
-        "CastNovaBoon",
-        "AresWeaponBoon",
-        "AresManaBoon",
-        "ApolloRetaliateBoon",
-        "AxeRangedWhirlwindTrait",
-        "SlowExAttackBoon",
-        "ApolloSprintBoon",
-        "StormSpawnBoon",
-        "AutoRevengeBoon",
-        "AresStatusDoubleDamageBoon",
-        "HighHealthCritBoon",
-        "ReserveManaHitShieldBoon",
-        "AxeFreeSpinTrait",
-        "AgilityCostume",
-        "DiminishingHealthAndManaBoon",
-        "DoubleBoltBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TimedBuffKeepsake",
@@ -4459,10 +4440,10 @@
                       }
                     },
                     "Survival": {
-                      "optionKey": "LastStandDrop",
+                      "optionKey": "ArmorBigBoost",
                       "reward": {
                         "offer": {
-                          "rewardType": "LastStandDrop"
+                          "rewardType": "ArmorBigBoost"
                         },
                         "traitOffersByAcquisitionRole": {},
                         "dispositionByAcquisitionRole": {

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-f3d45f3a-9f09-46e5-a05d-d70f947593ca",
-  "name": "Bracket04 Anubis Staff",
+  "projectId": "run-plan-a97b58d8-1dee-4a75-af41-f72d669473ea",
+  "name": "Anubis Staff",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -69,7 +69,7 @@
       },
       "keepsakeEquipResults": {
         "jeweledPom": {
-          "traitKey": "HadesDeathDefianceDamageBoon"
+          "traitKey": "HadesLifestealBoon"
         }
       }
     },

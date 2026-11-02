@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-6d0c66c9-4866-40c0-a4f0-0f0884a5c9c3",
-  "name": "Event18SkullMedea",
+  "projectId": "run-plan-16e94120-ce6b-48e9-857a-e659aa252a67",
+  "name": "Medea Skull",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -63,6 +63,10 @@
       },
       "startingKeepsakeKey": "HadesAndPersephoneKeepsake",
       "familiarKey": "RavenFamiliar",
+      "runModifiers": {
+        "enemyGoldDropChance": 100,
+        "encounterGoldRange": 100
+      },
       "keepsakeEquipResults": {
         "jeweledPom": {
           "traitKey": "HadesDashSweepBoon"
@@ -2681,6 +2685,39 @@
                 "gorgonResultByPhase": {
                   "Encounter": {
                     "athenaTriggerConditionMet": false
+                  }
+                },
+                "customizationByPhase": {
+                  "Encounter": {
+                    "generatedComposition": {
+                      "kind": "generated",
+                      "waveCount": 3,
+                      "highlightKey": "FishSwarmerSquad",
+                      "waves": [
+                        {
+                          "waveIndex": 1,
+                          "typeKeys": []
+                        },
+                        {
+                          "waveIndex": 2,
+                          "typeKeys": [
+                            "WaterUnit"
+                          ],
+                          "allocations": {
+                            "FishSwarmerSquad": 64
+                          }
+                        },
+                        {
+                          "waveIndex": 3,
+                          "typeKeys": [
+                            "WaterUnit"
+                          ],
+                          "allocations": {
+                            "FishSwarmerSquad": 225
+                          }
+                        }
+                      ]
+                    }
                   }
                 }
               },
