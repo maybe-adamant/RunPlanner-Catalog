@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-9eefd8b4-aa93-481a-94a1-d515d0808397",
+  "projectId": "run-plan-b1280053-f975-4656-a5fb-e4e3e6108548",
   "name": "Thanatos Axe",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -98,25 +98,7 @@
         "H": "Echo"
       },
       "fieldNpcsByBiome": {},
-      "basketTraitKeys": [
-        "SprintShieldBoon",
-        "DemeterCastBoon",
-        "HeraWeaponBoon",
-        "HeraManaBoon",
-        "PoseidonSpecialBoon",
-        "AxeFreeSpinTrait",
-        "AxeSturdyTrait",
-        "KeepsakeLevelBoon",
-        "ManaSpearBoon",
-        "OmegaPoseidonProjectileBoon",
-        "MoneyDamageBoon",
-        "HermesWeaponBoon",
-        "NarcissusI",
-        "DiminishingHealthAndManaBoon",
-        "AloneDamageBoon",
-        "RoomRewardBonusBoon",
-        "GoodStuffBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -2218,7 +2200,7 @@
                       "giverKey": "Narcissus",
                       "options": [
                         {
-                          "traitKey": "NarcissusH"
+                          "traitKey": "NarcissusC"
                         },
                         {
                           "traitKey": "NarcissusI"
