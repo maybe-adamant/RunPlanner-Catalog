@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-8537eb75-7906-4d66-8cee-5d099eb154ff",
+  "projectId": "run-plan-e0e211db-de16-483c-89a2-60278b0ed1c8",
   "name": "Morrigan Blades",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -3349,7 +3349,7 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "EchoDoubleLevelBoon"
                         },
                         {
                           "traitKey": "DiminishingDodgeBoon"
