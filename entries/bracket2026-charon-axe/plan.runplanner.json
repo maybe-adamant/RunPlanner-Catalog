@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-14632a9b-5898-4e49-9410-3c902faaf077",
+  "projectId": "run-plan-c921c4b0-9953-4629-97e0-f93a51a8355b",
   "name": "Charon Axe",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -99,26 +99,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "ApolloSpecialBoon",
-        "AphroditeSprintBoon",
-        "ApolloCastBoon",
-        "ApolloManaBoon",
-        "AgilityCostume",
-        "NarcissusI",
-        "ManaSpearBoon",
-        "SprintShieldBoon",
-        "AxeRangedWhirlwindTrait",
-        "EchoDoubleLevelBoon",
-        "AxeSecondStageTrait",
-        "HeraWeaponBoon",
-        "EncounterStartOffenseBuffBoon",
-        "BoonDecayBoon",
-        "PoseidonExCastBoon",
-        "OmegaPoseidonProjectileBoon",
-        "ManaBurstBoon",
-        "HighHealthOffenseBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -3342,7 +3323,7 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
                           "traitKey": "EchoDoubleShop"
