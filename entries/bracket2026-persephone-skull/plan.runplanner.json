@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-8f906548-834d-4932-8efa-590f5a430f6f",
-  "name": "Event19SkullPersephone",
+  "projectId": "run-plan-a112643a-62bf-4de1-bd61-3950b565bbb5",
+  "name": "Persephone Skull",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -89,23 +89,7 @@
           "Artemis"
         ]
       },
-      "basketTraitKeys": [
-        "DemeterSprintBoon",
-        "HeraWeaponBoon",
-        "HeraManaBoon",
-        "DemeterCastBoon",
-        "CastNovaBoon",
-        "AresSpecialBoon",
-        "BurnExplodeBoon",
-        "KeepsakeLevelBoon",
-        "InsideCastCritBoon",
-        "SprintShieldBoon",
-        "LobPulseAmmoCollectTrait",
-        "LobPulseAmmoTrait",
-        "RetaliateInvulnerabilityBoon",
-        "EchoDoubleLevelBoon",
-        "NarcissusD"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -2091,7 +2075,7 @@
                           "traitKey": "NarcissusC"
                         },
                         {
-                          "traitKey": "NarcissusH"
+                          "traitKey": "NarcissusB"
                         }
                       ],
                       "selectedOptionKey": "option1",
@@ -3440,7 +3424,7 @@
                           "echoPomTarget": "HeraWeaponBoon"
                         },
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingDodgeBoon"
                         }
                       ],
                       "selectedOptionKey": "option2",
