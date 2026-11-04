@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-8565b655-2b07-4e0f-b778-45c3445fa786",
-  "name": "Event20SkullHel",
+  "projectId": "run-plan-5a112341-6ddd-411e-a284-1f51891c2a84",
+  "name": "Hel Skull",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -98,24 +98,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "HestiaCastBoon",
-        "PoseidonWeaponBoon",
-        "EncounterStartOffenseBuffBoon",
-        "PoseidonSpecialBoon",
-        "PoseidonStatusBoon",
-        "PoseidonManaBoon",
-        "HeavyArmorBoon",
-        "FocusLightningBoon",
-        "HestiaSprintBoon",
-        "BurnExplodeBoon",
-        "HermesSpecialBoon",
-        "RestockBoon",
-        "LobGunAttackDoublerTrait",
-        "LobSpecialSpeedTrait",
-        "NarcissusI",
-        "DiminishingDodgeBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TempHammerKeepsake",
@@ -3313,7 +3296,7 @@
                           "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "EchoLastReward"
                         },
                         {
                           "traitKey": "DiminishingDodgeBoon"
