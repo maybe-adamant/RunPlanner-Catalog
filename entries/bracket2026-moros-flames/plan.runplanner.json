@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-505a130d-4edb-4fd2-8e5a-992068010145",
+  "projectId": "run-plan-34a1b539-d637-47c2-bbc9-f93222b2f208",
   "name": "Moros Flames",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -95,22 +95,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "HestiaCastBoon",
-        "SpawnCastDamageBoon",
-        "HeraSpecialBoon",
-        "ApolloWeaponBoon",
-        "EscalatingCostume",
-        "HeraManaBoon",
-        "ApolloSprintBoon",
-        "TorchOrbitPointTrait",
-        "HermesSpecialBoon",
-        "ZeusManaBoltBoon",
-        "OmegaHeraProjectileBoon",
-        "AllElementalBoon",
-        "DiminishingHealthAndManaBoon",
-        "TorchSpecialSpeedTrait"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TimedBuffKeepsake",
@@ -3015,16 +3000,18 @@
                 "cages": {
                   "cage1": {
                     "offer": {
-                      "rewardType": "TalentDrop"
+                      "rewardType": "StackUpgrade"
                     },
                     "traitOffersByAcquisitionRole": {},
-                    "hexActivationsByAcquisitionRole": {
+                    "levelResolutionsByAcquisitionRole": {
                       "self": {
-                        "selectedNodeKeys": [
-                          "1:4",
-                          "2:4",
-                          "3:5"
-                        ]
+                        "kind": "choice",
+                        "offeredTraitKeys": [
+                          "HeraSpecialBoon",
+                          "SpawnCastDamageBoon",
+                          "ZeusManaBoltBoon"
+                        ],
+                        "selectedTraitKey": "HeraSpecialBoon"
                       }
                     },
                     "dispositionByAcquisitionRole": {
@@ -3378,7 +3365,7 @@
                           "traitKey": "DiminishingDodgeBoon"
                         },
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "EchoDoubleLevelBoon"
                         },
                         {
                           "traitKey": "DiminishingHealthAndManaBoon"
