@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-7c113871-18be-44bd-9f84-fae28ab51d28",
-  "name": "Bracket03 Momus Staff",
+  "projectId": "run-plan-6adab1e4-822a-4178-a74f-dacd7cfa2eb8",
+  "name": "Momus Staff",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -3755,10 +3755,10 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
-                          "traitKey": "EchoDeathDefianceRefill"
+                          "traitKey": "DiminishingDodgeBoon"
                         },
                         {
                           "traitKey": "EchoLastReward"
