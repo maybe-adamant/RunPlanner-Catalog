@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-62c86751-a53d-4149-be6b-9b3b57b4a81f",
-  "name": "Event17SkullMel",
+  "projectId": "run-plan-d23587e8-71a2-4c35-b393-add77dfa5fe3",
+  "name": "Mel Skull",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -3218,7 +3218,7 @@
                           "echoPomTarget": "PoseidonWeaponBoon"
                         },
                         {
-                          "traitKey": "EchoDeathDefianceRefill"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
                           "traitKey": "DiminishingDodgeBoon"

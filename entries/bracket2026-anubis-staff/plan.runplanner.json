@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-a97b58d8-1dee-4a75-af41-f72d669473ea",
+  "projectId": "run-plan-845628ae-d761-4360-a55f-8364ce4d0043",
   "name": "Anubis Staff",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -3642,7 +3642,7 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoDeathDefianceRefill"
+                          "traitKey": "DiminishingDodgeBoon"
                         },
                         {
                           "traitKey": "EchoDoubleLevelBoon",

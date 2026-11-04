@@ -1,7 +1,8 @@
 {
   "schemaVersion": 98,
-  "projectId": "run-plan-2e3e9125-d606-43b7-b42b-2579e058ebaa",
-  "name": "Event05BladesMel",
+  "schemaRevision": 1,
+  "projectId": "run-plan-9b7a75a9-8788-425b-b6f1-e3b7e46ff9df",
+  "name": "Mel Blades",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -84,21 +85,7 @@
         "H": "Echo"
       },
       "fieldNpcsByBiome": {},
-      "basketTraitKeys": [
-        "ApolloSpecialBoon",
-        "AresWeaponBoon",
-        "FireballManaSpecialBoon",
-        "ZeusCastBoon",
-        "MissingHealthCritBoon",
-        "ApolloRetaliateBoon",
-        "ApolloSprintBoon",
-        "BurnExplodeBoon",
-        "FireballRendBoon",
-        "LuckyBoon",
-        "DaggerDashAttackTripleTrait",
-        "NarcissusC",
-        "DiminishingDodgeBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -2241,7 +2228,7 @@
                       "giverKey": "Narcissus",
                       "options": [
                         {
-                          "traitKey": "NarcissusH"
+                          "traitKey": "NarcissusE"
                         },
                         {
                           "traitKey": "NarcissusA"
@@ -3493,7 +3480,7 @@
                           "traitKey": "EchoDoubleShop"
                         },
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
                           "traitKey": "DiminishingDodgeBoon"

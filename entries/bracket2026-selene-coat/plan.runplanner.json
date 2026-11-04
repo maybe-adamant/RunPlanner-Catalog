@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-2fe897be-a591-4432-9476-5cf6995ff0b6",
-  "name": "Event22CoatSelene",
+  "projectId": "run-plan-fc97d09d-47de-4857-bb16-0c6da2cf578c",
+  "name": "Selene Coat",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -118,23 +118,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "PoseidonWeaponBoon",
-        "HeraCastBoon",
-        "ApolloSprintBoon",
-        "ApolloRetaliateBoon",
-        "SpawnCastDamageBoon",
-        "PoseidonStatusBoon",
-        "EncounterStartOffenseBuffBoon",
-        "PoseidonSplashSprintBoon",
-        "FocusLightningBoon",
-        "HermesWeaponBoon",
-        "SuitDashAttackTrait",
-        "SuitAttackSizeTrait",
-        "InvulnerabilityCastBoon",
-        "DiminishingDodgeBoon",
-        "BoonDecayBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -3099,20 +3083,9 @@
                   },
                   "cage3": {
                     "offer": {
-                      "rewardType": "SpellDrop"
+                      "rewardType": "MaxManaDrop"
                     },
-                    "traitOffersByAcquisitionRole": {
-                      "self": null
-                    },
-                    "hexActivationsByAcquisitionRole": {
-                      "self": {
-                        "selectedNodeKeys": [
-                          "1:2",
-                          "1:4",
-                          "2:4"
-                        ]
-                      }
-                    },
+                    "traitOffersByAcquisitionRole": {},
                     "dispositionByAcquisitionRole": {
                       "self": {
                         "kind": "normal"
@@ -3327,7 +3300,7 @@
                   },
                   "cage2": {
                     "offer": {
-                      "rewardType": "TalentDrop"
+                      "rewardType": "RoomMoneyDrop"
                     },
                     "traitOffersByAcquisitionRole": {},
                     "dispositionByAcquisitionRole": {
@@ -3502,7 +3475,7 @@
                           "traitKey": "EchoDoubleShop"
                         },
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
                           "traitKey": "DiminishingDodgeBoon"

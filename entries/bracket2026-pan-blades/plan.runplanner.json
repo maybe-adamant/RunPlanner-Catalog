@@ -1,7 +1,8 @@
 {
   "schemaVersion": 98,
-  "projectId": "run-plan-f1a7a4e4-cb58-4fc9-b887-1b21606d29d2",
-  "name": "Event07BladesPan",
+  "schemaRevision": 1,
+  "projectId": "run-plan-a9bd6def-1812-4adc-b346-3a6afb6cc244",
+  "name": "Pan Blades",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -90,22 +91,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "ZeusSpecialBoon",
-        "HephaestusWeaponBoon",
-        "ApolloSprintBoon",
-        "ApolloRetaliateBoon",
-        "ApolloCastBoon",
-        "SpawnCastDamageBoon",
-        "DamageShareRetaliateBoon",
-        "BlindClearBoon",
-        "HermesCastDiscountBoon",
-        "HermesWeaponBoon",
-        "DaggerChargeStageSkipTrait",
-        "DaggerDashAttackTripleTrait",
-        "EchoDoubleLevelBoon",
-        "CritBonusBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "TempHammerKeepsake",
@@ -3596,7 +3582,7 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoDeathDefianceRefill"
+                          "traitKey": "DiminishingDodgeBoon"
                         },
                         {
                           "traitKey": "EchoDoubleLevelBoon"
