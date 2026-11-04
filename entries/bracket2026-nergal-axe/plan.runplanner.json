@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-5f4715c2-5eda-4ebf-9dff-13dbaf97102f",
+  "projectId": "run-plan-9eebcf4c-ac46-424b-9405-0667a337dfbb",
   "name": "Nergal Axe",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -3578,10 +3578,10 @@
                       "giverKey": "Echo",
                       "options": [
                         {
-                          "traitKey": "EchoLastRunBoon"
+                          "traitKey": "DiminishingHealthAndManaBoon"
                         },
                         {
-                          "traitKey": "EchoDeathDefianceRefill"
+                          "traitKey": "DiminishingDodgeBoon"
                         },
                         {
                           "traitKey": "EchoDoubleLevelBoon"
