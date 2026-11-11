@@ -1,8 +1,8 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-365a8f74-c463-4a60-b169-0641e9cab5ec",
-  "name": "Event24CoatShiva",
+  "projectId": "run-plan-703e91aa-bf4e-4b49-8573-62eedc0c73f3",
+  "name": "Shiva Coat",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
     "routeKey": "Underworld",
@@ -104,22 +104,7 @@
           "Nemesis"
         ]
       },
-      "basketTraitKeys": [
-        "ApolloWeaponBoon",
-        "HeraCastBoon",
-        "SpawnCastDamageBoon",
-        "DemeterSpecialBoon",
-        "SlowExAttackBoon",
-        "BurnExplodeBoon",
-        "KeepsakeLevelBoon",
-        "SuitAttackRangeTrait",
-        "SuitPowershotTrait",
-        "InsideCastCritBoon",
-        "InvulnerabilityDashBoon",
-        "EchoDoubleLevelBoon",
-        "NarcissusC",
-        "LuckyBoon"
-      ],
+      "basketByGiver": {},
       "rackKeepsakeByBiome": {
         "F": "SkipEncounterKeepsake",
         "G": "AthenaEncounterKeepsake",
@@ -3200,7 +3185,7 @@
                     "athenaOffer": {
                       "traitKeys": [
                         "InvulnerabilityDashBoon",
-                        "DeathDefianceRefillBoon",
+                        "FocusLastStandBoon",
                         "InvulnerabilityCastBoon"
                       ],
                       "selectedOptionKey": "option1"
