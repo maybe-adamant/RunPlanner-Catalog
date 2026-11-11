@@ -1,7 +1,7 @@
 {
   "schemaVersion": 98,
   "schemaRevision": 1,
-  "projectId": "run-plan-a112643a-62bf-4de1-bd61-3950b565bbb5",
+  "projectId": "run-plan-40b81df8-68bf-4a8a-b858-7d48c5c2faec",
   "name": "Persephone Skull",
   "catalogVersion": "0.55.0-anvil-of-fates",
   "route": {
@@ -3128,7 +3128,7 @@
                     "athenaOffer": {
                       "traitKeys": [
                         "InvulnerabilityDashBoon",
-                        "DeathDefianceRefillBoon",
+                        "RetaliateInvulnerabilityBoon",
                         "InvulnerabilityCastBoon"
                       ],
                       "selectedOptionKey": "option1"
